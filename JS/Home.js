@@ -19,9 +19,11 @@ document.addEventListener("DOMContentLoaded", function () {
             if (index === slideIndex) {
                 slide.classList.add("active");
                 navButtons[index].classList.add("active");
+                contents[index].style.display = "block"; // Tampilkan teks pada slide yang aktif
             } else {
                 slide.classList.remove("active");
                 navButtons[index].classList.remove("active");
+                contents[index].style.display = "none"; // Sembunyikan teks pada slide lain
             }
         });
 
@@ -56,4 +58,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Memulai otomatisasi slide
     startAutoSlide();
+    // Tampilkan teks pada slide pertama saat halaman dimuat
+    showSlide(currentSlide);
 });
