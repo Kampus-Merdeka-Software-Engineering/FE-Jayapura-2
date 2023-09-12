@@ -17,6 +17,11 @@
     src: url(../Assets//Montserrat-Medium.ttf);
 }
 
+@font-face {
+    font-family: font-logo;
+    src: url(/Assets//RocaOne-Bold.ttf);
+  }
+
 
 body {
     height: 100vh;
@@ -64,6 +69,7 @@ body {
     /*   float: left; */
     width: 210px;
     height: 70px;
+    font-family: font-logo ;
 }
 
 /* Section Carousel */
