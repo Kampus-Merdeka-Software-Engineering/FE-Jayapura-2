@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/product.css">
-    <title>Document</title>
+    <title>Product</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="../JS/Home.js"></script>
 </head>
 <body>
     <!-- All Navigation Bar -->
@@ -20,6 +22,34 @@
           <button id="show-login" class="navbarbutton">Login</button>
         </nav>
       </header>
+      <!-- Login Pop Up Method -->
+    <div class="popup">
+      <div class="close-btn">&times;</div>
+      <div class="form">
+        <h2>Log in</h2>
+        <div class="form-element">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter Email" />
+        </div>
+        <div class="form-element">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter Password" />
+        </div>
+        <div class="form-element">
+          <input type="checkbox" id="remember-me" />
+          <label for="remember-me">Remember me</label>
+        </div>
+        <div class="form-element">
+          <button>Sign in</button>
+        </div>
+        <div class="form-element">
+          <a href="../HTML/Signup.html" target="_blank">Create Account ?</a>
+          <p>or</p>
+          <a href="../HTML/Resetpass.html" target="_blank">Forgot Password</a>
+        </div>
+      </div>
+    </div>
+    <!-- Products -->
     <div class="container">
         <nav class="judul">
             <h1>Batik for Men</h1>
@@ -35,7 +65,8 @@
                 </ul>
         </main>
         <div id="sidebar">
-            sidebar
+          <h4>baju<h4>
+          <h4>celana<h4>
         </div>
         <div id="content1">
                 <img class="b" src="/Assets/Semua Produk/Batik Puring Shirt 3.jpg" alt="">
@@ -61,6 +92,7 @@
             <img class="b" src="/Assets/Batik Pria/Mocha Noir Shirt.jpg" alt="">
             <h3>Mocha Noir Shirt</h3>
         </div>
+      </div>
         <!-- Footer -->
             <footer>
               <div class="footer">
