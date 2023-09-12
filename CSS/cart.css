@@ -1,0 +1,235 @@
+/* Navigation Bar */
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    background-color: #f6f4f3;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    align-items: center;
+}
+
+/* Button Navigation Bar */
+.navbar button{
+    font-size: 18px;
+    font-family : "allfont"; 
+    color: #786337;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 25px;
+    margin-right: 20px;
+    border: 0;
+}
+.navbar .logout{
+    width: 20px;
+    height: 20px;
+    color: #786337;
+    text-align: center;
+}
+
+/* Animation Button Navigation Bar */
+.navbar button.active,
+.navbar button:hover{
+    font-weight: bolder;
+    color: #C7A55B;
+}
+/* Logo */
+.logo{
+    display: inline-block;
+    float: left;
+    width: 210px;
+    height: 70px;
+}
+
+/* Section Carousel */
+.image img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+/* Login Pop Up */
+.popup {
+	position: absolute;
+	top: -150%;
+	left: 50%;
+	opacity: 0;
+	transform: translate(-50%,-50%) scale(1.25);
+	width: 380px;
+	padding: 20px 30px;
+	background: #fff;
+	box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
+	border-radius: 10px;
+	transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 200ms ease-in-out 0ms;
+
+}			
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+#container{
+    min-height: 100%;
+    position: relative;
+}
+
+/* Font Custom */
+@font-face {
+    font-family: allfont;
+    src: url(/Assets/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: font-desc-foot;
+    src: url(/Assets//Montserrat-Medium.ttf);
+}
+
+body{
+    height: 100vh;
+    background-color: #f6f4f3;    
+    font-family: allfont;
+}
+
+/* Footer */
+.footer {
+    line-height: 1.5;
+    font-family: fontdescfooter;
+}
+
+/* Footer */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1170px;
+    margin: auto;
+}
+
+/* Footer */
+.footer {
+    background-color: #786337;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    position: absolute
+}
+
+/* Footer */
+.footer-col img{
+    width: 115px;
+    height: 100px;
+    margin-left: 20px;
+	margin-bottom: 13px;
+    padding-bottom: 0px;
+}
+
+/* Footer */
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+    margin-top: 30px;
+}
+
+/* Footer */
+.footer-col h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: allfont;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+/* Footer */
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer-col ul li a {
+    font-size: 16px;
+	font-family: font-desc-foot;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #ffffff;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+/* Footer */
+.footer-col ul p {
+    font-size: 16px;
+	font-family: font-desc-foot;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+/* Footer */
+.footer-col ul li a:hover {
+    color: #005ea1;
+    padding-left: 8px;
+}
+
+/* Footer */
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 0px 10px 10px 0px;
+	background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+}
+
+/* Footer */
+.footer-col.social-links img.active,
+.footer-col .social-links img:hover {
+    background-color: #c2c2c2;
+}
+
+/* Footer */
+.footer-bottom hr {
+	border: 0;
+    height: 1px;
+    margin-bottom: 5px;
+    /* margin-top: ; */
+    background: rgb(255, 217, 192);
+    background-image: rgb(246, 176, 128)
+}
+
+
+/* Footer */
+.footer-bottom p {
+	font-family: font-desc-foot;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: Lucida Sans Unicode;
+    padding: 10px 0px;
+    padding-top: 7px;
+}
+
+/* Footer */
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+        }
+}
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+        }
+}

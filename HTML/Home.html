@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuansa Batik</title>
+    <link rel="stylesheet" href="../CSS/Home.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="../JS/Home.js"></script>
+  </head>
+  <body>
+    <!-- All Navigation Bar -->
+    <header class="header">
+      <!-- Gambar Logo -->
+      <img src="../Assets/Logo1.svg" alt="" class="logo" />
+      <!-- Navigation Button -->
+      <nav class="navbar">
+        <a href="../HTML/Home.html" class="navbarbutton">Home</a>
+        <a href="../HTML/product.html" class="navbarbutton">Product</a>
+        <a href="../HTML/AboutUs.html" class="navbarbutton">About Us</a>
+        <a href="../HTML/Contact.html" class="navbarbutton">Contact</a>
+        <button id="show-login" class="navbarbutton">Login</button>
+      </nav>
+    </header>
+    <!-- Login Pop Up Method -->
+    <div class="popup">
+      <div class="close-btn">&times;</div>
+      <div class="form">
+        <h2>Log in</h2>
+        <div class="form-element">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter Email" />
+        </div>
+        <div class="form-element">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter Password" />
+        </div>
+        <div class="form-element">
+          <input type="checkbox" id="remember-me" />
+          <label for="remember-me">Remember me</label>
+        </div>
+        <div class="form-element">
+          <button>Sign in</button>
+        </div>
+        <div class="form-element">
+          <a href="../HTML/Signup.html" target="_blank">Create Account ?</a>
+          <p>or</p>
+          <a href="../HTML/Resetpass.html" target="_blank">Forgot Password</a>
+        </div>
+      </div>
+    </div>
+    <!-- Carousel -->
+    <section class="home">
+      <div class="slide">
+        <img
+          class="img-slide active"
+          data-slide="0"
+          src="../Assets/a1.jpg"
+          alt="Image 1"
+        />
+        <div class="content active" data-slide="0">
+          <h1>slide 1<br /><span>Ipsum</span></h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+            Id aut officiis qui ipsam, eum nesciunt repellat<br />
+            placeat dolores quos asperiores <br />obcaecati iusto quisquam
+            quaerat cum veniam amet maxime, architecto voluptate.
+          </p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <div class="slide">
+        <img
+          class="img-slide"
+          data-slide="1"
+          src="../Assets/a2.jpg"
+          alt="Image 2"
+        />
+        <div class="content" data-slide="1">
+          <h1>slide 2<br /><span>Ipsum</span></h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+            Id aut officiis qui ipsam, eum nesciunt repellat<br />
+            placeat dolores quos asperiores obcaecati iusto quisquam
+            <br />quaerat cum veniam amet maxime, architecto voluptate.
+          </p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <div class="slide">
+        <img
+          class="img-slide"
+          data-slide="2"
+          src="../Assets/a4.jpg"
+          alt="Image 3"
+        />
+        <div class="content" data-slide="2">
+          <h1>slide 3<br /><span>Ium</span></h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+            Id aut officiis qui ipsam, eum nesciunt repellat<br />
+            placeat dolores quos asperiores obcaecati iusto quisquam
+            <br />quaerat cum veniam amet maxime, architecto voluptate.
+          </p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <div class="slide">
+        <img
+          class="img-slide"
+          data-slide="3"
+          src="../Assets/a5.jpg"
+          alt="Image 4"
+        />
+        <div class="content" data-slide="3">
+          <h1>slide 4<br /><span>Ipsum</span></h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+            Id aut officiis qui ipsam, eum nesciunt repellat<br />
+            placeat dolores quos asperiores obcaecati iusto quisquam
+            <br />quaerat cum veniam amet maxime, architecto voluptate.
+          </p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <div class="slider-navigation">
+        <div class="nav-btn active" id="nav-0"></div>
+        <div class="nav-btn" id="nav-1"></div>
+        <div class="nav-btn" id="nav-2"></div>
+        <div class="nav-btn" id="nav-3"></div>
+      </div>
+    </section>
+    <!-- Best Seller Section -->
+   <section class="best-seller-products">
+    <h1> Our Best Seller Products</h1>
+    <div class="best-seller">
+      <div class="best-products">
+        <img src="/Assets/Semua Produk/Batik Puring Shirt .jpg">
+        <div class="products-info">
+          <h4 class="products-title">Batik Puring Shirt</h4>
+          <p class="products-price"> IDR 45.000</p>
+          <a class="products-btn" href="#">View More</a>
+        </div>
+      </div>
+      <div class="best-products">
+        <img src="/Assets/Semua Produk/Batik Songket Shirt .jpg">
+        <div class="products-info">
+          <h4 class="products-title">Batik Songket Shirt</h4>
+          <p class="products-price"> IDR 45.000</p>
+          <a class="products-btn" href="#">View More</a>
+        </div>
+      </div>
+      <div class="best-products">
+        <img src="/Assets/Semua Produk/Center Tield Dress 2.jpg">
+        <div class="products-info">
+          <h4 class="products-title">Center Tield Dress</h4>
+          <p class="products-price"> IDR 45.000</p>
+          <a class="products-btn" href="#">View More</a>
+        </div>
+      </div>
+      <div class="best-products">
+        <img src="/Assets/Semua Produk/Delima Dress Orange 3.jpg ">
+        <div class="products-info">
+          <h4 class="products-title">Delima Dress Orange</h4>
+          <p class="products-price"> IDR 45.000</p>
+          <a class="products-btn" href="#">View More</a>
+        </div>
+      </div>
+    </div>
+ </section>
+  <!-- Our Categories Section -->
+  <section class="categories">
+    <div class="wrapper">
+      <h2 class="Category-title"> Our Categories</h3>
+        <div class="Categories-container">
+            <div class="Category">
+                <img src="/Assets/Semua Produk/Center Tield Dress .jpg" alt="">
+                  <div class="categories-body">
+                <h4 href="#">Dress</h4>
+                </div>
+            </div>
+            <div class="Category">
+                <img src="/Assets/Semua Produk/Batik Puring Shirt .jpg" alt="">
+                <div class="categories-body">
+                    <h4>Shirt</h4>
+                      <a href="#">klik here</a>
+                </div>>
+            </div>
+            <div class="Category">
+                <img src="/Assets/Semua Produk/Center Tield Dress .jpg" alt="">
+                <div class="categories-body">
+                    <h4>Center Tield Dress</h4>
+                      <span href="#">klik here</span>
+                </div>
+            </div>
+            <div class="Category">
+                <img src="/Assets/Semua Produk/Center Tield Dress .jpg" alt="">
+                <div class="categories-body">
+                    <h4>Center Tield Dress</h4>
+                      <span href="#">klik here</span>
+                </div>
+            </div>
+            <div class="Category">
+                <img src="/Assets/Semua Produk/Center Tield Dress .jpg" alt="">
+                <div class="categories-body">
+                    <h4>Center Tield Dress</h4>
+                      <span href="#">klik here</span>
+                </div>
+            </div>
+        </div>
+        <button class="btn-show-all" type="button"> Show All Categories</button>
+    </div>
+    </section>
+    <!-- About Section -->
+    <section class="hero">
+      <div id="AboutUS" class="heading">
+        <h1>About Us</h1>
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <h2>Nuansa Batik</h2>
+          <p>
+            We are a company specializing in the production and sale of
+            high-quality batik clothing. With a deep appreciation for
+            Indonesia's cultural beauty and traditions. We are committed to
+            promoting Indonesia's cultural heritage through our batik clothing.
+            Every time you choose our products, you are supporting the
+            preservation of traditions and adding value to local artisans. Thank
+            you for your support. Join us on our journey to elevate the beauty
+            of Indonesian batik to a global level.
+          </p>
+          <button class="cta-button">Go Shopping</button>
+        </div>
+        <div class="hero-image">
+          <img src="../Assets/Gambar2.jpg" />
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <!-- footer -->
+        <div class="row">
+          <div class="footer-col">
+            <img src="../Assets/LogoNuansa.svg" alt="" />
+            <div class="social-links">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Company & Store</h4>
+            <ul>
+              <p>Jl. Batik Indah No. 123</p>
+              <p>Batikland, Indonesia, 12345</p>
+              <p>Mobile : +62 123 4567 8901</p>
+              <p>Tel : +62 123 4567 8902</p>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Product Selections</h4>
+            <ul>
+              <li><a href="#">Batik Tunics</a></li>
+              <li><a href="#">Batik Dresses</a></li>
+              <li><a href="#">Batik Men's</a></li>
+              <li><a href="#">Batik Skirts</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+              <li><a href="TermConditions.html">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div class="footer-bottom">
+          <hr />
+          <p>Copyright &copy; Nuansa Batik 2023</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
