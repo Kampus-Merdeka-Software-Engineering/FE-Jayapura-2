@@ -176,74 +176,14 @@ body {
 
 section{
     padding: 100px 0px 50px 0px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     text-decoration: none;
     list-style: none;
     background: none;
     animation: fadeInUp 2s ease;
 }
 
-.form h1 {
-    padding: 50px;
-    padding-left: 90px;
-    font-size: 30px;
-    font-weight: bold;
-    background-image: url('/Assets/p&P.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat; 
-    background-position: center center;
-    color: #eee;
-    font-family: font-desc-foot;
-    line-height: 1.5;
-    text-align: left;
-  }
 
-.forms p {
-    margin-top:20px;
-    margin-bottom: 20px;
-    margin-left: 70px;
-    margin-right: 70px;
-    padding: 20px;
-    border: none;
-    background-color: none;
-    font-size: 20px;
-    font-family: font-desc-foot;
-    line-height: 1.5;
-    color: #666;
-    text-align: justify;
-    border-radius: 15px;
-}
-
-.privacy-policy h2 {
-    margin-left: 70px;
-    margin-right: 70px;
-    padding: 20px;
-    border: 1px solid #dcd7d7bc;
-    margin-top: 0px;
-    font-size: 23px;
-    font-family: font-desc-foot;
-    line-height: 1.5;
-    background-color: #ddbd8ee0;
-    color: #785B35;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
-
-.privacy-policy p {
-    margin-left: 70px;
-    margin-right:70px;
-    margin-bottom: 20px;
-    padding: 20px;
-    border: 1px solid #dcd7d7bc;
-    background-color: #e1c8a1be;
-    font-size: 20px;
-    font-family: font-desc-foot;
-    line-height: 1.5;
-    color: #786337;
-    text-align: justify;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-}
 
 
 /* Footer */
@@ -384,26 +324,3 @@ section{
     }
 }
 
-/* Privacy & Policy */
-@media (max-width: 768px) {
-    .section {
-        width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    .privacy-policy {
-        width: 100%;
-    }
-}
-
-@keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0px);
-    }
-}
