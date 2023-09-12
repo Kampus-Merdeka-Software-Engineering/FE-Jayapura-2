@@ -183,12 +183,13 @@ body {
     height: 300vh;
     padding-top: 100px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 3.5fr 2.2fr 2.2fr 2.8fr;
+    grid-template-rows: 3.5fr 1.2fr 2.5fr 2.8fr;
     grid-template-areas:
       "nav nav nav nav"
       "main main main main"
       "sidebar content1 content2 content3"
       "sidebar content4 content5 content6"
+      "sidebar content7 content8 content9"
       "footer footer footer footer";
     grid-gap: 0.2rem;
   }
@@ -227,7 +228,9 @@ li{
   grid-area: sidebar;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
+  line-height: 2;
   margin-left: 10px;
+  margin-top: 20px;
   padding: 20px;
 }
 #size{
@@ -240,6 +243,8 @@ li{
     grid-area: content1;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    line-height: 1.5;
+    text-align: center;
   }
   .b{
     width: 90%;
@@ -252,29 +257,59 @@ li{
     grid-area: content2;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    line-height: 1.5;
+    text-align: center;
   }
   
   #content3 {
     grid-area: content3;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    line-height: 1.5;
+    text-align: center;
   }
   
   #content4 {
     grid-area: content4;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    line-height: 1.5;
+    text-align: center;
   }
   #content5 {
     grid-area: content5;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    line-height: 1.5;
+    text-align: center;
   }
   #content6 {
     grid-area: content6;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    line-height: 1.5;
+    text-align: center;
   }
+  #content7 {
+    grid-area: content7;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    line-height: 1.5;
+    text-align: center;
+  }
+  #content8 {
+    grid-area: content8;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    line-height: 1.5;
+    text-align: center;
+  }
+  #content9 {
+    grid-area: content9;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+
 
   h3{
     color: #C08261;
