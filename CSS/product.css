@@ -183,13 +183,14 @@ body {
     height: 300vh;
     padding-top: 100px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 3.5fr 1.2fr 2.5fr 2.8fr;
+    grid-template-rows: 2.5fr 2.5fr 2.8fr 2.8fr;
     grid-template-areas:
       "nav nav nav nav"
       "main main main main"
       "sidebar content1 content2 content3"
       "sidebar content4 content5 content6"
       "sidebar content7 content8 content9"
+      "content10 content10 content10 content10"
       "footer footer footer footer";
     grid-gap: 0.2rem;
   }
@@ -212,11 +213,19 @@ body {
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
   }
+  .describe{
+    text-align: center;
+    font-family: garamond, serif;
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+  }
 .point1{
     font-size: 12px;
     text-align: center;
     list-style-type: none;
     color: #C08261;
+    background-color: #eee;
 }
 li{
     display: inline-block;
@@ -309,7 +318,29 @@ li{
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
   }
-
+  #content10 {
+    grid-area: content10;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    text-align: center;
+    padding-bottom: 50px;
+    z-index: 1;
+  }
+  .pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+  }
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+  }
 
   h3{
     color: #C08261;
