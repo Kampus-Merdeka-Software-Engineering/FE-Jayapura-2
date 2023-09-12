@@ -227,6 +227,14 @@ body {
   grid-area: sidebar;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
+  margin-left: 10px;
+  padding: 20px;
+}
+#size{
+  float: right;
+}
+#ptype{
+  float: right;
 }
   #content1 {
     grid-area: content1;
