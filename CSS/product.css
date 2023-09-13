@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
 /* Font Custom */
 @font-face {
     font-family: allfont;
@@ -56,6 +64,115 @@ body {
     height: 70px;
 }
 
+/* Login Pop Up */
+.popup {
+  z-index: 1000;
+  position: absolute;
+  top: -150%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1.25);
+  width: 380px;
+  padding: 20px 30px;
+  background: #fff;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 200ms ease-in-out 0ms;
+}
+
+/* Login Pop Up */
+.popup.active {
+  top: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms, transform 200ms ease-in-out 0ms;
+}
+
+/* Login Pop Up */
+.popup .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  background: #888;
+  color: #eee;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* Login Pop Up */
+.popup .form h2 {
+  text-align: center;
+  color: #222;
+  margin: 10px 0px 20px;
+  font-size: 25px;
+}
+
+/* Login Pop Up */
+.popup .form .form-element {
+  margin: 15px 0px;
+}
+
+/* Login Pop Up */
+.popup .form .form-element label {
+  font-size: 14px;
+  color: #222;
+}
+
+/* Login Pop Up */
+.popup .form .form-element input[type="text"],
+.popup .form .form-element input[type="password"] {
+  font-family: allfont;
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+/* Login Pop Up */
+.popup .form .form-element input[type="checkbox"] {
+  font-family: allfont;
+  margin-right: 5px;
+}
+
+/* Login Pop Up */
+.popup .form .form-element button {
+  font-family: allfont;
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #785B35;
+  color: #f5f5f5;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Login Pop Up */
+.popup .form .form-element p {
+  display: inline;
+  font-size: 15px;
+  color: black;
+}
+
+/* Login Pop Up */
+.popup .form .form-element a {
+  display: inline;
+  padding: 0 5px;
+  text-align: right;
+  font-size: 15px;
+  color: #1a79ca;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 :root {
     --main-radius: 5px;
     --main-padding: 5px;
@@ -64,13 +181,16 @@ body {
 .container {
     display: grid;
     height: 300vh;
+    padding-top: 100px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 3.5fr 2.2fr 2.2fr 2.8fr;
+    grid-template-rows: 2.5fr 2.5fr 2.8fr 2.8fr;
     grid-template-areas:
       "nav nav nav nav"
       "main main main main"
       "sidebar content1 content2 content3"
       "sidebar content4 content5 content6"
+      "sidebar content7 content8 content9"
+      "content10 content10 content10 content10"
       "footer footer footer footer";
     grid-gap: 0.2rem;
   }
@@ -81,24 +201,33 @@ body {
     background-repeat: no-repeat;
     grid-area: nav;
     border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
+    padding: 225px;
     font-size: 30px;
     color: white;
     text-align: center;
     object-fit: cover;
   }
+  
   main {
     grid-area: main;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
   }
-  .point1{
+  .describe{
+    text-align: center;
+    font-family: garamond, serif;
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+  }
+.point1{
     font-size: 12px;
     text-align: center;
     list-style-type: none;
     color: #C08261;
+    background-color: #eee;
 }
-li{
+.point1 li{
     display: inline-block;
     padding: 20px;
     margin-inline: 30px;
@@ -108,11 +237,23 @@ li{
   grid-area: sidebar;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
+  line-height: 2;
+  margin-left: 10px;
+  margin-top: 20px;
+  padding: 20px;
+}
+#size{
+  float: right;
+}
+#ptype{
+  float: right;
 }
   #content1 {
     grid-area: content1;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    line-height: 1.5;
+    text-align: center;
   }
   .b{
     width: 90%;
@@ -125,43 +266,95 @@ li{
     grid-area: content2;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    line-height: 1.5;
+    text-align: center;
   }
   
   #content3 {
     grid-area: content3;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    line-height: 1.5;
+    text-align: center;
   }
   
   #content4 {
     grid-area: content4;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    line-height: 1.5;
+    text-align: center;
   }
   #content5 {
     grid-area: content5;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    line-height: 1.5;
+    text-align: center;
   }
   #content6 {
     grid-area: content6;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    line-height: 1.5;
+    text-align: center;
+  }
+  #content7 {
+    grid-area: content7;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    line-height: 1.5;
+    text-align: center;
+  }
+  #content8 {
+    grid-area: content8;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    line-height: 1.5;
+    text-align: center;
+  }
+  #content9 {
+    grid-area: content9;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  #content10 {
+    grid-area: content10;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    text-align: center;
+    padding-bottom: 50px;
+    z-index: 1;
+  }
+  .pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+  }
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
   }
 
   h3{
     color: #C08261;
   }
 
-  footer {
+  /* footer {
     grid-area: footer;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
-  }
+  } */
 
-  /* Footer */
+/* Footer */
 .footer {
-  line-height: 1;
+  line-height: 1.5;
   font-family: fontdescfooter;
 }
 
@@ -192,9 +385,9 @@ li{
 
 /* Footer */
 .footer-col {
-  width: 23%;
-  padding: 0 10px;
-  margin-top: 20px;
+  width: 25%;
+  padding: 0 15px;
+  margin-top: 30px;
 }
 
 /* Footer */
@@ -204,7 +397,7 @@ li{
   color: #ffffff;
   font-family: allfont;
   text-transform: capitalize;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   position: relative;
 }
 
@@ -233,7 +426,7 @@ li{
   text-transform: capitalize;
   color: #ffffff;
   text-decoration: none;
-  font-weight: 200;
+  font-weight: 300;
   color: #ffffff;
 }
 
@@ -281,4 +474,18 @@ li{
   font-family: Lucida Sans Unicode;
   padding: 10px 0px;
   padding-top: 7px;
+}
+
+/* Footer */
+@media(max-width: 767px) {
+  .footer-col {
+      width: 50%;
+      margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 574px) {
+  .footer-col {
+      width: 100%;
+  }
 }

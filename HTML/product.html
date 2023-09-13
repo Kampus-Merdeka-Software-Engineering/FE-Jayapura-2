@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/product.css">
-    <title>Document</title>
+    <title>Product</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="../JS/Home.js"></script>
 </head>
 <body>
     <!-- All Navigation Bar -->
@@ -20,11 +22,44 @@
           <button id="show-login" class="navbarbutton">Login</button>
         </nav>
       </header>
+      <!-- Login Pop Up Method -->
+    <div class="popup">
+      <div class="close-btn">&times;</div>
+      <div class="form">
+        <h2>Log in</h2>
+        <div class="form-element">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter Email" />
+        </div>
+        <div class="form-element">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter Password" />
+        </div>
+        <div class="form-element">
+          <input type="checkbox" id="remember-me" />
+          <label for="remember-me">Remember me</label>
+        </div>
+        <div class="form-element">
+          <button>Sign in</button>
+        </div>
+        <div class="form-element">
+          <a href="../HTML/Signup.html" target="_blank">Create Account ?</a>
+          <p>or</p>
+          <a href="../HTML/Resetpass.html" target="_blank">Forgot Password</a>
+        </div>
+      </div>
+    </div>
+    <!-- Products -->
     <div class="container">
         <nav class="judul">
             <h1>Batik for Men</h1>
         </nav>
         <main>
+          <p class="describe">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Doloremque omnis vitae, facere ut tenetur facilis repellendus molestias rerum eius hic delectus et quae, saepe enim?
+            Magnam pariatur ea neque est. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Tenetur adipisci eligendi, consequatur distinctio, ipsum obcaecati, ducimus non harum maxime aperiam magni! Magnam impedit mollitia, deleniti ut dicta ad eveniet laboriosam.
+          </p>
             <ul class="point1">
                 <li><h1>Free home delivery</h1>
                 <p>jahdjdjuekwlqkwlmxnjdhjshuw</p></li>
@@ -35,32 +70,89 @@
                 </ul>
         </main>
         <div id="sidebar">
-            sidebar
+          <div class="ptype">
+            <h4>PRODUCT TYPE</h4>
+            <label for="ptype">MEN'S APPAREL</label>
+            <input type="checkbox" id="ptype" name="ptype">
+          </div>
+          <div class="color">
+            <h4>COLOR</h4>
+            <svg width="50" height="50">
+              <circle cx="20" cy="20" r="15" fill="black" />
+            </svg>
+            <svg width="50" height="50">
+              <circle cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="white" />
+            </svg>
+            <svg width="50" height="50">
+              <circle cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="beige" />
+            </svg>
+            <svg width="50" height="50">
+              <circle cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="yellow" />
+            </svg>
+          </div>
+          <div class="size">
+            <h4>SIZE</h4>
+            <label for="size">S</label>
+            <input type="checkbox" id="size" name="size"><br>
+            <label for="size">M</label>
+            <input type="checkbox" id="size" name="size"><br>
+            <label for="size">XL</label>
+            <input type="checkbox" id="size" name="size"><br>
+            <label for="size">XXL</label>
+            <input type="checkbox" id="size" name="size">
+          </div>
         </div>
         <div id="content1">
                 <img class="b" src="/Assets/Semua Produk/Batik Puring Shirt 3.jpg" alt="">
                 <h3>Batik Puring Shirt</h3>
+                <h5>Rp 450.000,00</h5>
         </div>
         <div id="content2">
             <img class="b" src="/Assets/Batik Pria/Arjuna Batik Shirt2.jpg" alt="">
             <h3>Arjuna Batik Shirt</h3>
+            <h5>Rp 350.000,00</h5>
         </div>
         <div id="content3">
             <img class="b" src="/Assets/Batik Pria/Black Shirt with Chestnut Splash 1.jpg" alt="">
             <h3>Black Shirt with Chestnut Splash</h3>
+            <h5>Rp 400.000,00</h5>
         </div>
         <div id="content4">
             <img class="b" src="/Assets/Batik Pria/Lanange Silver Mist Shirt.jpg" alt="">
             <h3>Lanange Silver Mist Shirt</h3>
+            <h5>Rp 250.000,00</h5>
         </div>
         <div id="content5">
             <img class="b" src="/Assets/Batik Pria/Lanange Tropical Sunrise Shirt1.jpg" alt="">
             <h3>Lanange Tropical Sunrise Shirt</h3>
+            <h5>Rp 300.000,00 </h5>
         </div>
         <div id="content6">
             <img class="b" src="/Assets/Batik Pria/Mocha Noir Shirt.jpg" alt="">
             <h3>Mocha Noir Shirt</h3>
+            <h5>Rp 350.000,00</h5>
         </div>
+        <div id="content7">
+          <img class="b" src="/Assets/Semua Produk/Batik Songket Shirt .jpg" alt="">
+          <h3>Batik Songket Shirt</h3>
+          <h5>Rp 350.000,00</h5>
+        </div>
+        <div id="content8">
+          <img class="b" src="/Assets/Batik Pria/Sunshine Elegnace Batik Shirt 1.jpg" width="70%" height="70%" alt="">
+          <h3>Sunshine Elegnace Batik Shirt</h3>
+          <h5>Rp 250.000,00</h5>
+        </div>
+        <div id="content9"></div>
+        <div id="content10">
+          <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">&raquo;</a>
+          </div>
+        </div>
+      </div>
         <!-- Footer -->
             <footer>
               <div class="footer">
