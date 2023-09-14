@@ -1,215 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="/CSS/Contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="../JS/Home.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact</title>
-<!-- Link Swiper's CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
-  <link rel="stylesheet" href="/CSS/Contact.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <script src="../JS/Home.js"></script>
-</head>
-
-<body>
-  <!-- All Navigation Bar -->
-  <header class="header">
-    <!-- Gambar Logo -->
-    <img src="../Assets/Logo1.svg" alt="" class="logo" />
-    <!-- Navigation Button -->
-    <nav class="navbar">
-      <a href="../HTML/Home.html" class="navbarbutton">Home</a>
-      <a href="../HTML/product.html" class="navbarbutton">Product</a>
-      <a href="../HTML/AboutUs.html" class="navbarbutton">About Us</a>
-      <a href="../HTML/Contact.html" class="navbarbutton">Contact</a>
-      <button id="show-login" class="navbarbutton">Login</button>
-    </nav>
-  </header>
-  <!-- Login Pop Up Method -->
-  <div class="popup">
-    <div class="close-btn">&times;</div>
-    <div class="form">
-      <h2>Log in</h2>
-      <div class="form-element">
-        <label for="email">Email</label>
-        <input type="text" id="email" placeholder="Enter Email" />
-      </div>
-      <div class="form-element">
-        <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Enter Password" />
-      </div>
-      <div class="form-element">
-        <input type="checkbox" id="remember-me" />
-        <label for="remember-me">Remember me</label>
-      </div>
-      <div class="form-element">
-        <button>Sign in</button>
-      </div>
-      <div class="form-element">
-        <a href="../HTML/Signup.html" target="_blank">Create Account ?</a>
-        <p>or</p>
-        <a href="../HTML/Resetpass.html" target="_blank">Forgot Password</a>
+  <body>
+    <!-- All Navigation Bar -->
+    <header class="header">
+      <!-- Gambar Logo -->
+      <img src="../Assets/Logo1.svg" alt="" class="logo" />
+      <!-- Navigation Button -->
+      <nav class="navbar">
+        <a href="../HTML/Home.html" class="navbarbutton">Home</a>
+        <a href="../HTML/product.html" class="navbarbutton">Product</a>
+        <a href="../HTML/AboutUs.html" class="navbarbutton">About Us</a>
+        <a href="../HTML/Contact.html" class="navbarbutton">Contact</a>
+        <button id="show-login" class="navbarbutton">Login</button>
+      </nav>
+    </header>
+    <!-- Login Pop Up Method -->
+    <div class="popup">
+      <div class="close-btn">&times;</div>
+      <div class="form">
+        <h2>Log in</h2>
+        <div class="form-element">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter Email" />
+        </div>
+        <div class="form-element">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter Password" />
+        </div>
+        <div class="form-element">
+          <input type="checkbox" id="remember-me" />
+          <label for="remember-me">Remember me</label>
+        </div>
+        <div class="form-element">
+          <button>Sign in</button>
+        </div>
+        <div class="form-element">
+          <a href="../HTML/Signup.html" target="_blank">Create Account ?</a>
+          <p>or</p>
+          <a href="../HTML/Resetpass.html" target="_blank">Forgot Password</a>
+        </div>
       </div>
     </div>
-  </div>
-<!-- Content -->
-<section>
-  <div id="ContactUs" class="swiper mySwiper containr"> 
-  <div class="contact-us">
-    <div class="swiper-wrapper contact">
-     
-      <div class="swiper-slide card">
-        <div class="card-content">
-         <div class="card-image">
-          <img src="../Assets/Batik Pria/Arjuna Batik Shirt.jpg" alt="">
-        </div>
-        <div class="media-icons">
-          <i class="fa fa-facebook"></i></a>
-          <i class="fa fa-twitter"></i></a>
-          <i class="fa fa-linkedin"></i></a>
-        </div>
-        <div class="name-profession">
-          <span class="name"> Someone Name</span>
-          <span class="profession"> Web Developer</span>
-        </div>
-        <div class="button">
-          <button class="aboutme"> About Me </button>
-          <button class="Hireme"> Hire Me </button>
-        </div>
-        </div>
-      </div>
-      <div class="swiper-slide card">
-        <div class="card-content">
-         <div class="card-image">
-          <img src="../Assets/Batik Pria/Arjuna Batik Shirt.jpg" alt="">
-        </div>
-        <div class="media-icons">
-          <i class="fa fa-facebook"></i></a>
-          <i class="fa fa-twitter"></i></a>
-          <i class="fa fa-linkedin"></i></a>
-        </div>
-        <div class="name-profession">
-          <span class="name"> Someone Name</span>
-          <span class="profession"> Web Developer</span>
-        </div>
-        <div class="button">
-          <button class="aboutme"> About Me </button>
-          <button class="Hireme"> Hire Me </button>
-        </div>
-        </div>
-      </div>
-      <div class="swiper-slide card">
-        <div class="card-content">
-         <div class="card-image">
-          <img src="../Assets/Batik Pria/Arjuna Batik Shirt.jpg" alt="">
-        </div>
-        <div class="media-icons">
-          <i class="fa fa-facebook"></i></a>
-          <i class="fa fa-twitter"></i></a>
-          <i class="fa fa-linkedin"></i></a>
-        </div>
-        <div class="name-profession">
-          <span class="name"> Someone Name</span>
-          <span class="profession"> Web Developer</span>
-        </div>
-        <div class="button">
-          <button class="aboutme"> About Me </button>
-          <button class="Hireme"> Hire Me </button>
-        </div>
-    </div>
-  </div>
-  <div class="swiper-slide card">
-    <div class="card-content">
-     <div class="card-image">
-      <img src="../Assets/Batik Pria/Arjuna Batik Shirt.jpg" alt="">
-    </div>
-    <div class="media-icons">
-      <i class="fa fa-facebook"></i></a>
-      <i class="fa fa-twitter"></i></a>
-      <i class="fa fa-linkedin"></i></a>
-    </div>
-    <div class="name-profession">
-      <span class="name"> Someone Name</span>
-      <span class="profession"> Web Developer</span>
-    </div>
-    <div class="button">
-      <button class="aboutme"> About Me </button>
-      <button class="Hireme"> Hire Me </button>
-    </div>
-    
-</div>
-</div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-pagination"></div>
-</section>
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-<!-- Initialize Swiper -->
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-</script>
-  <!-- Footer -->
-  <footer>
-    <div class="footer">
-      <!-- footer -->
-      <div class="row">
-        <div class="footer-col">
-          <img src="../Assets/LogoNuansa.svg" alt="" />
-          <div class="social-links">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
+    <!-- Content -->
+    <section>
+      <div class="container">
+        <div class="contactinfo">
+          <div>
+            <h2>Contact Info</h2>
+            <ul class="info">
+              <li>
+                <span
+                  ><img src="../Assets/location-dot-solid.svg" alt=""
+                /></span>
+                <span
+                  >Jl. Batik Indah No. 123 <br />Batikland, Indonesia,
+                  12345</span
+                >
+              </li>
+              <li>
+                <span><img src="../Assets/envelope-regular.svg" alt="" /></span>
+                <span>loremipsum@gmail.com</span>
+              </li>
+              <li>
+                <span><img src="../Assets/phone-solid.svg" alt="" /></span>
+                <span>+6212345678902</span>
+              </li>
+            </ul>
+            <ul class="sci">
+              <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="footer-col">
-          <h4>Company & Store</h4>
-          <ul>
-            <p>Jl. Batik Indah No. 123</p>
-            <p>Batikland, Indonesia, 12345</p>
-            <p>Mobile : +62 123 4567 8901</p>
-            <p>Tel : +62 123 4567 8902</p>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Product Selections</h4>
-          <ul>
-            <li><a href="#">Batik Tunics</a></li>
-            <li><a href="#">Batik Dresses</a></li>
-            <li><a href="#">Batik Men's</a></li>
-            <li><a href="#">Batik Skirts</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
-            <li><a href="TermConditions.html">Terms & Conditions</a></li>
-          </ul>
+        <div class="contactform">
+          <h2>Send a Message</h2>
+          <div class="formbox">
+            <div class="inputbox w50">
+              <input type="text" name="" required />
+              <span>First Name</span>
+            </div>
+            <div class="inputbox w50">
+              <input type="text" name="" required />
+              <span>Last Name</span>
+            </div>
+            <div class="inputbox w50">
+              <input type="text" name="" required />
+              <span>Email Address</span>
+            </div>
+            <div class="inputbox w50">
+              <input type="text" name="" required />
+              <span>Mobile Number</span>
+            </div>
+            <div class="inputbox w100">
+              <textarea name="" required></textarea>
+              <span>Write your message here</span>
+            </div>
+            <div class="inputbox w100">
+              <input type="submit" value="Send" />
+            </div>
+          </div>
         </div>
       </div>
-      <br />
-      <br />
-      <div class="footer-bottom">
-        <hr />
-        <p>Copyright &copy; Nuansa Batik 2023</p>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <!-- footer -->
+        <div class="row">
+          <div class="footer-col">
+            <img src="../Assets/LogoNuansa.svg" alt="" />
+            <div class="social-links">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Company & Store</h4>
+            <ul>
+              <p>Jl. Batik Indah No. 123</p>
+              <p>Batikland, Indonesia, 12345</p>
+              <p>Mobile : +62 123 4567 8901</p>
+              <p>Tel : +62 123 4567 8902</p>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Product Selections</h4>
+            <ul>
+              <li><a href="#">Batik Tunics</a></li>
+              <li><a href="#">Batik Dresses</a></li>
+              <li><a href="#">Batik Men's</a></li>
+              <li><a href="#">Batik Skirts</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+              <li><a href="TermConditions.html">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div class="footer-bottom">
+          <hr />
+          <p>Copyright &copy; Nuansa Batik 2023</p>
+        </div>
       </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
