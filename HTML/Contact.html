@@ -5,6 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact</title>
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="/CSS/Contact.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <script src="../JS/Home.js"></script>
@@ -53,8 +56,114 @@
   </div>
 <!-- Content -->
 <section>
-
+  <div id="ContactUs" class="swiper mySwiper containr"> 
+  <div class="contact-us">
+    <div class="swiper-wrapper contact">
+     
+      <div class="swiper-slide card">
+        <div class="card-content">
+         <div class="card-image">
+          <img src="../Assets/Batik Pria/Arjuna Batik Shirt.jpg" alt="">
+        </div>
+        <div class="media-icons">
+          <i class="fa fa-facebook"></i></a>
+          <i class="fa fa-twitter"></i></a>
+          <i class="fa fa-linkedin"></i></a>
+        </div>
+        <div class="name-profession">
+          <span class="name"> Someone Name</span>
+          <span class="profession"> Web Developer</span>
+        </div>
+        <div class="button">
+          <button class="aboutme"> About Me </button>
+          <button class="Hireme"> Hire Me </button>
+        </div>
+        </div>
+      </div>
+      <div class="swiper-slide card">
+        <div class="card-content">
+         <div class="card-image">
+          <img src="../Assets/Batik Pria/Arjuna Batik Shirt.jpg" alt="">
+        </div>
+        <div class="media-icons">
+          <i class="fa fa-facebook"></i></a>
+          <i class="fa fa-twitter"></i></a>
+          <i class="fa fa-linkedin"></i></a>
+        </div>
+        <div class="name-profession">
+          <span class="name"> Someone Name</span>
+          <span class="profession"> Web Developer</span>
+        </div>
+        <div class="button">
+          <button class="aboutme"> About Me </button>
+          <button class="Hireme"> Hire Me </button>
+        </div>
+        </div>
+      </div>
+      <div class="swiper-slide card">
+        <div class="card-content">
+         <div class="card-image">
+          <img src="../Assets/Batik Pria/Arjuna Batik Shirt.jpg" alt="">
+        </div>
+        <div class="media-icons">
+          <i class="fa fa-facebook"></i></a>
+          <i class="fa fa-twitter"></i></a>
+          <i class="fa fa-linkedin"></i></a>
+        </div>
+        <div class="name-profession">
+          <span class="name"> Someone Name</span>
+          <span class="profession"> Web Developer</span>
+        </div>
+        <div class="button">
+          <button class="aboutme"> About Me </button>
+          <button class="Hireme"> Hire Me </button>
+        </div>
+    </div>
+  </div>
+  <div class="swiper-slide card">
+    <div class="card-content">
+     <div class="card-image">
+      <img src="../Assets/Batik Pria/Arjuna Batik Shirt.jpg" alt="">
+    </div>
+    <div class="media-icons">
+      <i class="fa fa-facebook"></i></a>
+      <i class="fa fa-twitter"></i></a>
+      <i class="fa fa-linkedin"></i></a>
+    </div>
+    <div class="name-profession">
+      <span class="name"> Someone Name</span>
+      <span class="profession"> Web Developer</span>
+    </div>
+    <div class="button">
+      <button class="aboutme"> About Me </button>
+      <button class="Hireme"> Hire Me </button>
+    </div>
+    
+</div>
+</div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
 </section>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
   <!-- Footer -->
   <footer>
     <div class="footer">
