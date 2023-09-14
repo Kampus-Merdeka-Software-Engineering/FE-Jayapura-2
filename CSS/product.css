@@ -273,19 +273,26 @@ main {
 .img-desc {
   position: absolute;
   margin-top: 256px;
+  transition: .5 ease;
 }
 
 .img-desc button {
   border: none;
-  color: white;
-  padding: 20px 115px;
+  color: grey;
+  padding: 20px 114px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 18px;
   margin: 4px 2px;
   cursor: pointer;
-  background-color: rgb(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  transition: .5 ease;
+}
+
+.img-desc :hover button {
+  opacity: 1;
 }
 
 #content2 {
