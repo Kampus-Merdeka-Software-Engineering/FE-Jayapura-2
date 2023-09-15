@@ -136,7 +136,7 @@ section {
 
 /* judul h1  */
 .home .content h1 {
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -148,7 +148,7 @@ section {
 
 /* judul h1 span */
 .home .content h1 span {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 600;
     margin: 0;
 }
