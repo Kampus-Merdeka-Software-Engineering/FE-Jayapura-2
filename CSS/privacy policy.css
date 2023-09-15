@@ -180,7 +180,6 @@ section{
     text-decoration: none;
     list-style: none;
     background: none;
-    animation: fadeInUp 2s ease;
 }
 
 .form h1 {
@@ -196,6 +195,7 @@ section{
     font-family: font-desc-foot;
     line-height: 1.5;
     text-align: left;
+    animation: fadeInUp 2s ease;
   }
 
 .forms p {
@@ -212,6 +212,7 @@ section{
     color: #666;
     text-align: justify;
     border-radius: 15px;
+    animation: fadeInUp 2s ease;
 }
 
 .privacy-policy h2 {
@@ -227,6 +228,7 @@ section{
     color: #785B35;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    animation: fadeInUp 2s ease;
 }
 
 .privacy-policy p {
@@ -243,6 +245,7 @@ section{
     text-align: justify;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    animation: fadeInUp 2s ease;s
 }
 
 
