@@ -190,7 +190,7 @@ section{
     background-color: #f6f4f3;
 }
 
-section::before{
+/* section::before{
     content: '';
     position: absolute;
     top: 0;
@@ -198,7 +198,7 @@ section::before{
     width: 50%;
     height: 100%;
     background-color:#786337;
-}
+} */
 
 section .container{
     position: relative;
@@ -212,9 +212,10 @@ section .container .contactinfo {
     position: absolute;
     top: 40px;
     width: 350px;
-    height: calc(100%-80px);
+    height: calc(100% - 80px);
     background-color: #786337;
     z-index: 1;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -222,7 +223,7 @@ section .container .contactinfo {
 }
 
 section .container .contactinfo h2{
-    color: #786337;
+    color: white;
     font-size: 24px;
     font-weight: 500;
 }
@@ -253,10 +254,126 @@ section .container .contactinfo .info li span:nth-child(1) img{
 }
 
 section .container .contactinfo .info li span:nth-child(2){
-    color: #786337;
+    color: white;
     margin-left: 10px;
     font-weight: 300;
     opacity: 0.5;
+}
+
+section .container .contactinfo .info li span:nth-child(1) img, section .container .contactinfo .info li span:nth-child(2){
+    opacity: 0.5;
+}
+
+section .container .contactinfo .sci img{
+    width: 30px;
+    height: 30px;
+}
+
+section .container .contactinfo .sci{
+    position: relative;
+    display: flex;
+}
+
+section .container .contactinfo .sci li {
+    list-style-type: none;
+    margin-right: 15px;
+}
+
+section .container .contactinfo .sci li a {
+    text-decoration: none;
+}
+
+section .container .contactinfo .sci li a img {
+    filter: invert(1);
+    opacity: 0.5;
+}
+
+section .container .contactinfo .sci li:hover a img {
+    opacity: 1;
+}
+
+section .container .contactform{
+    position: absolute;
+    padding: 70px 50px;
+    background: #ffff;
+    margin-left: 150px;
+    padding-left: 250px;
+    width: calc(100% - 150px);
+    height: 100%;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+}
+
+section .container .contactform h2 {
+    color: #786337;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+section .container .contactform .formbox{
+    position: relative;
+    display: flex;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+section .container .contactform .formbox .inputbox{
+    position: relative;
+    margin: 0 0 35px 0;
+}
+
+section .container .contactform .formbox .inputbox.w50{
+    width: 47%;
+}
+
+section .container .contactform .formbox .inputbox.w100{
+    width: 100%;
+}
+
+section .container .contactform .formbox .inputbox input, section .container .contactform .formbox .inputbox textarea {
+    width: 100%;
+    padding: 5px 0;
+    resize: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+}
+
+section .container .contactform .formbox .inputbox textarea{
+    min-height: 120px;
+}
+
+section .container .contactform .formbox .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    pointer-events: none;
+}
+section .container .contactform .formbox .inputbox input:focus ~ span, section .container .contactform .formbox .inputbox textarea:focus ~span, section .container .contactform .formbox .inputbox input:valid ~ span, section .container .contactform .formbox .inputbox textarea:valid ~span {
+    transform :translateY(-20px);
+    font-weight: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #ff568c;
+}
+
+section .container .contactform .formbox .inputbox input[type="submit"]{
+    position: relative;
+    cursor: pointer;
+    background: #786337;
+    color: #ffff;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+}
+section .container .contactform .formbox .inputbox input[type="submit"]:hover{
+    background: #ff568c;
 }
 /* Footer */
 .footer {
