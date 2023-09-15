@@ -74,7 +74,7 @@ body {
 
 /* Section Carousel */
 section {
-    padding: 100px 200px;
+    padding-top: 30px;
 }
 
 /* kelas "home" di dalam section */
@@ -489,7 +489,7 @@ section {
     color: #786337;
     font-size: 55px;
     text-align: center;
-    margin-top: 35px;
+    margin-top: 20px;
 }
 
 .container {
@@ -497,7 +497,7 @@ section {
     justify-content: center;
     align-items: center;
     width: 110%;
-    margin: 65px auto;
+    margin: 30px auto;
 }
 
 .hero-content {
@@ -623,7 +623,7 @@ h1 {
     text-align: center;
     font-size: 50px;
     margin-top: 10x;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -634,10 +634,11 @@ h2 {
 
 .best-seller {
     display: flex;
-    flex-wrap: wrap;
-    margin: 20px 20px 20;
-    margin-left: -150px;
-    margin-right:  -90px;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* margin: 20px 20px 20; */
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
@@ -694,14 +695,14 @@ h2 {
     width: 100%;
 }
 .categories .wrapper{
-    width: 110%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 25px;
     flex-direction: column;
-    padding: 50px 0;
+    padding: 30px 0;
 }
 .categories .wrapper .Categories-container{
     display: flex;
