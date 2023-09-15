@@ -138,6 +138,7 @@ section {
 .home .content h1 {
     font-size: 3em;
     font-weight: 900;
+    font-family: font-desc-foot;
     text-transform: uppercase;
     letter-spacing: 5px;
     line-height: 60px;
