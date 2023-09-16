@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  list-style: none;
+  /*  list-style: none; */
 }
 
 /* Font Custom */
@@ -420,14 +420,9 @@ h3 {
   font-size: 24px;
   color: #C08261;
   margin-bottom: 16em;
-}
-
-.overlay img {
-  max-width: 25%;
-  height: auto;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 50px;
+  white-space: nowrap;
+  text-align: center;
 }
 
 .overlay .close {
@@ -446,36 +441,31 @@ h3 {
   cursor: pointer;
 }
 
-.overlay .image-container {
-  padding-left: 10px;
-  flex: 1;
-}
-
 .image-container {
-  text-align: left;
-  align-items: center;
-}
-
-.image-container img {
-  max-width: 75%;
-  height: auto;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  margin-top: -90px;
-  margin-left: -14em;
-}
-
-
-.overlay .product-description {
-  grid-column: 2;
+  /*  text-align: left;
+  align-items: center;*/
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-left: 20px;
-  box-sizing: border-box;
-  flex: 1;
-  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+  width: 900px;
+  height: 900px;
+}
+
+.gambar-produk1,
+.gambar-produk2,
+.gambar-produk3 {
+  max-width: 60%;
+  height: auto;
+  margin: -230px;
+  padding: 0%;
+}
+
+.gambar-produk2 {
+  margin-left: -290px;
+}
+
+.gambar-produk3 {
+  margin-left: -353px;
 }
 
 .overlay .product-description {
@@ -488,7 +478,17 @@ h3 {
   padding: 10px;
   border-radius: 5px;
   margin: 20px;
+  margin-top: 50px;
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
+  box-sizing: border-box;
+  flex: 1;
+  font-family: 'helvetica';
 }
+
 
 .product-description p {
   font-size: 16px;
