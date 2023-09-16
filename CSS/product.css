@@ -26,7 +26,7 @@ body {
 
 /* Navigation Bar */
 .header {
-  position: fixed;
+  position: absolute;
   width: 100%;
   padding: 10px;
   background-color: #f6f4f3;
@@ -181,10 +181,9 @@ body {
 
 .container {
   display: grid;
-  height: 300vh;
-  padding-top: 100px;
+  height: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 2.5fr 2.5fr 2.8fr 2.8fr;
+  grid-template-rows: 2.5fr 2.5fr 2.8fr 2.8fr 2.8fr 2.8fr 1fr 2.8fr;
   grid-template-areas:
     "nav nav nav nav"
     "main main main main"
@@ -197,7 +196,7 @@ body {
 }
 
 nav.judul {
-  background-image: url("/Assets/Semua Produk/batik judul.jpg");
+  background-image: url("../Assets/Semua Produk/batik judul.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   grid-area: nav;
@@ -514,11 +513,11 @@ h3 {
   color: black;
 }
 
-/* footer {
+footer {
     grid-area: footer;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
-  } */
+  }
 
 /* Footer */
 .footer {
