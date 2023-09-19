@@ -713,9 +713,18 @@ h2 {
     left: 20px;
 }
 /* categories */
+.categories{
+    position: relative;
+    width: 100%;
+    height: 500px;
+  margin: auto;
+    justify-content: center;
+    flex-direction: column;
+}
 .wrapper{
+  margin: 30px 60px;
   display: flex;
-  max-width: 1200px;
+  max-width: 1300px;
   position: relative;
 }
 .wrapper i{
@@ -836,7 +845,7 @@ h2 {
   .categories_btn {
     margin-top: 1rem;
     color: var(--white);
-    background-color: var(--text-dark);
+    background-color: #785B35;
     padding: 20px 30px;
   }
   
@@ -848,8 +857,8 @@ h2 {
 /* news */
 .news {
     background-color: var(--extra-light);
+
   }
-  
   .news_grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -896,8 +905,9 @@ h2 {
 
 /* contact us */
 .ContactUs{
-    margin-top: 10rem;
-    background-color: var(--white);
+    margin-top: 5rem;
+    height: 500px;
+    background-color: var(--extra-light);
 }
 .section__container {
     max-width: var(--max-width);
@@ -922,7 +932,7 @@ h2 {
     font-size: 0.8rem;
     font-weight: 600;
     color: var(--text-light);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-family: font-desc-foot;
   }
   
@@ -930,18 +940,18 @@ h2 {
     text-align: left;
     font-size: 2rem;
     font-weight: 400;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     color: var(--text-dark);
   }
   
-  .header__content .product-btn {
-    background: #785B35;;
+  .header__content button{
+    background: #785B35;
+    padding: 15px 35px;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
     border-radius: 2px;
-    padding: 0.75rem 2rem;
-    font-size: 0.8rem;
-    outline: none;
-    cursor: pointer;
-    transition: 0.3s;
   }
   .header__content a{
     color: #fff;
@@ -954,10 +964,10 @@ h2 {
   }
   
   .header__image img {
-    height: 450px;
-    max-width: 500px;
+    height: 580px;
+    max-width: 700px;
     position: absolute;
-    bottom: -6rem;
+    bottom: -11.1rem;
   }
   
   /* Sale Section */
@@ -997,9 +1007,10 @@ h2 {
   
   .sale__btn {
     margin-top: 2rem;
+    
     padding: 15px 20px;
     color: var(--white);
-    background-color: var(--text-dark);
+    background-color: #786337;
   }
   
   .sale__card::before {
