@@ -233,8 +233,19 @@ main {
 
 .point1 li {
   display: inline-block;
-  padding: 20px;
+  padding: 10px;
   margin-inline: 30px;
+}
+
+.point1 p{
+  font-family: "font-desc-foot";
+  font-size: 12px;
+}
+
+.point1 .fa {
+  font-size: 50px;
+  color: #666;
+  line-height: 1.1;
 }
 
 #sidebar {
