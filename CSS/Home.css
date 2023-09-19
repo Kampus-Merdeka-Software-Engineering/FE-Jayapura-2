@@ -524,6 +524,7 @@ section {
 }
 
 .hero-content p {
+  text-align: justify;
     font-size: 18px;
     font-family: "font-desc-foot";
     line-height: 1.5;
