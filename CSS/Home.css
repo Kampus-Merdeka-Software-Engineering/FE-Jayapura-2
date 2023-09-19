@@ -145,8 +145,7 @@ section {
 /* judul h1  */
 .home .content h1 {
     font-size: 3em;
-    font-weight: 900;
-    font-family: font-desc-foot;
+    font-family: "font-desc-foot";
     text-transform: uppercase;
     letter-spacing: 5px;
     line-height: 60px;
@@ -169,6 +168,7 @@ section {
 .home .content p {
     margin-bottom: 50px;
     text-align: justify;
+    font-family: "font-desc-foot";
 }
 
 /* tautan di dalam elemen dengan kelas "content" */
@@ -522,8 +522,9 @@ section {
 
 .hero-content h2 {
     font-size: 35px;
+    text-align: left;
+    margin : 0px 27px;
     font-family: "font-desc-foot";
-    margin-bottom: 20px;
     color: #333;
 }
 
@@ -841,11 +842,12 @@ h2 {
     width: 100%;
     top: -100%;
     left: 0;
-    
     background-color: rgba(0, 0, 0, 0.5);
     transition: 0.5s;
   }
-  
+  .categories_subtitle:hover{
+  color: #fff;
+  }
   .categories_card:hover::before {
     top: 0;
   }
@@ -934,6 +936,7 @@ h2 {
   }
   .section__title {
     text-align: center;
+    font-family: "font-desc-foot";
     font-size: 40px;
     font-weight: 600;
     color: #786337;
@@ -946,11 +949,10 @@ h2 {
     margin: 0px -30px;
   }
   .header__content p {
-    font-size: 0.8rem;
-    font-weight: 600;
+    font-size: 0.9rem;
     color: var(--text-light);
     margin-bottom: 2rem;
-    font-family: font-desc-foot;
+    font-family: "font-desc-foot";
   }
   
   .header__content h1 {
@@ -959,6 +961,7 @@ h2 {
     font-weight: 400;
     margin-bottom: 1rem;
     color: var(--text-dark);
+
   }
   
   .header__content button{
@@ -1030,7 +1033,7 @@ h2 {
   .sale__btn {
     margin-top: 2rem;
     font-family: font-desc-foot;
-    font-weight: ;
+    border: none;
     padding: 15px 20px;
     color: var(--white);
     background-color: #786337;
