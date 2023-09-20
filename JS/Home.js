@@ -61,3 +61,28 @@ document.addEventListener("DOMContentLoaded", function () {
     // Tampilkan teks pada slide pertama saat halaman dimuat
     showSlide(currentSlide);
 });
+
+function increaseQuantity() {
+    var quantityInput = document.getElementById("quantity");
+    quantityInput.value = parseInt(quantityInput.value) + 1;
+  }
+
+  function decreaseQuantity() {
+    var quantityInput = document.getElementById("quantity");
+    if (parseInt(quantityInput.value) > 1) {
+      quantityInput.value = parseInt(quantityInput.value) - 1;
+    }
+  }
+
+const customCheckboxes = document.querySelectorAll('.custom-checkbox');
+
+customCheckboxes.forEach((checkbox) => {
+  const inputCheckbox = checkbox.querySelector('input[type="checkbox"]');
+  const checkboxLabel = checkbox.querySelector('.checkbox-label');
+
+  checkboxLabel.addEventListener('click', () => {
+    if (!inputCheckbox.disabled) {
+      inputCheckbox.checked = !inputCheckbox.checked;
+    }
+  });
+});
