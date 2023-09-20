@@ -17,6 +17,10 @@
     src: url(../Assets//Montserrat-Medium.ttf);
 }
 
+@font-face {
+    font-family: font-logo;
+    src: url(/Assets//RocaOne-Bold.ttf);
+}
 
 body {
     height: 100vh;
@@ -37,7 +41,7 @@ body {
 }
 
 /* Button Navigation Bar */
-.navbar .navbarbutton{
+.navbar .navbarbutton {
     font-size: 18px;
     font-family: "allfont";
     color: #786337;
@@ -48,6 +52,7 @@ body {
     border: none;
     cursor: pointer;
 }
+
 
 /* Animation Button Navigation Bar */
 .navbar .navbarbutton.active,
@@ -63,6 +68,7 @@ body {
     /*   float: left; */
     width: 210px;
     height: 70px;
+    font-family: font-logo;
 }
 
 /* Login Pop Up */
@@ -174,15 +180,15 @@ body {
     font-weight: 600;
 }
 
-section{
+/* article */
+.article {
     padding: 100px 0px 50px 0px;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
     background: none;
 }
-
-.form h1 {
+.article h1 {
     padding: 50px;
     padding-left: 90px;
     font-size: 30px;
@@ -195,51 +201,25 @@ section{
     font-family: font-desc-foot;
     line-height: 1.5;
     text-align: left;
-    animation: fadeInUp 2s ease;
-  }
-
-.forms p {
-    margin-top:20px;
-    margin-bottom: 20px;
-    margin-left: 70px;
-    margin-right: 70px;
-    padding: 20px;
-    border: none;
-    background-color: none;
-    font-size: 20px;
+}
+.article h2 {
+    margin: 20px 90px 20px 90px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #786337;
     font-family: font-desc-foot;
     line-height: 1.5;
-    color: #666;
-    text-align: justify;
-    border-radius: 15px;
+    text-align: left;
     animation: fadeInUp 2s ease;
 }
 
-.privacy-policy h2 {
-    margin-left: 70px;
-    margin-right: 70px;
-    padding: 20px;
-    border: 1px solid #dcd7d7bc;
-    margin-top: 0px;
-    font-size: 23px;
-    font-family: font-desc-foot;
-    line-height: 1.5;
-    background-color: #ddbd8ee0;
-    color: #785B35;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    animation: fadeInUp 2s ease;
-}
-
-.privacy-policy p {
-    margin-left: 70px;
-    margin-right:70px;
-    margin-bottom: 20px;
-    padding: 20px;
-    border: 1px solid #dcd7d7bc;
-    background-color: #e1c8a1be;
+.article p {
+    margin-left: 90px;
+    margin-right:90px;
+    margin-bottom: 10px;
     font-size: 20px;
     font-family: font-desc-foot;
+    text-indent: 60px;
     line-height: 1.5;
     color: #786337;
     text-align: justify;
@@ -248,6 +228,27 @@ section{
     animation: fadeInUp 2s ease;
 }
 
+.article figure {
+    float: right;
+    margin: 0px 90px 0px 20px; 
+    animation: fadeInUp 2s ease;
+}
+}
+
+.article .img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    animation: fadeInUp 2s ease;
+}
+}
+
+.article figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: 12px;
+    color: #888;
+}
 
 /* Footer */
 .footer {
@@ -381,13 +382,13 @@ section{
     }
 }
 
+/* article */
 @media(max-width: 574px) {
     .footer-col {
         width: 100%;
     }
 }
 
-/* Privacy & Policy */
 @media (max-width: 768px) {
     .section {
         width: 100%;
