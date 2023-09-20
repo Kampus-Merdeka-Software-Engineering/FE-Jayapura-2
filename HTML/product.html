@@ -207,43 +207,81 @@
     </div>
   </div>
 
-  <!-- PopUp Product -->
-  <div class="overlay" id="gambar-1">
-    <a href="#" class="close">&times;</a>
-    <div class="popup-title">
-      <h2>Batik Puring Shirt</h2>
+<!-- PopUp Product -->
+<div class="overlay" id="gambar-1">
+  <a href="#" class="closeOverlay">&times;</a>
+  <div class="content-image">
+    <div class="image-container">
+      <img class="gambar-produk1" src="/Assets/Batik Pria/Arjuna Batik Shirt2.jpg" alt="gambar1">
     </div>
-    <div class="content-image">
-      <div class="image-container">
-        <img class="gambar-produk1" src="/Assets/Batik Pria/Arjuna Batik Shirt2.jpg" alt="gambar1">
-      </div>
-      <div class="image-container">
-        <img class="gambar-produk2" src="/Assets/Batik Pria/Arjuna Batik Shirt1.jpg" alt="gambar2">
-        <img class="gambar-produk2" src="/Assets/Batik Pria/Arjuna Batik Shirt1.jpg" alt="gambar2">
-      </div>
-    </div>
-    <div class="description">
-      <div class="product-description">
-        <p><em>"Arjuna Batik features a blend of deep black, creamy vanilla, and rich brown. Celebrating Indonesian
-            craftsmanship, this versatile piece exudes timeless elegance, making it perfect for both formal and
-            casual occasions." </em> <br>
-        </p>
-        <ul class="my-list">
-          <li>Made from 100% natural fiber (viscose)</li>
-          <li>Featuring a wide collar</li>
-          <li>Boasting a comfortable and stylish boxy fit</li>
-          <li>Please note that the color and prints may vary from one shirt to another due to the hand-printing process.
-          </li>
-          <li>Our model stands at 178 cm tall and is wearing a size L. To find your perfect fit, consult our size chart.
-            These shirts are available<br> in sizes ranging from S to XXL.
-          </li>
-        </ul>
-        <p>Taking care of your batik shirt is easy: simply machine wash it on a gentle cycle (avoid using strong
-          detergents), and hang it to dry.<br> If needed, you can give it a warm ironing touch-up.</p>
-        <button>Add to Cart</button>
-      </div>
+    <div class="image-container">
+      <img class="gambar-produk2" src="/Assets/Batik Pria/Arjuna Batik Shirt1.jpg" alt="gambar2">
+      <img class="gambar-produk2" src="/Assets/Batik Pria/Arjuna Batik Shirt1.jpg" alt="gambar2">
     </div>
   </div>
+  <section class="product-content">
+    <div class="popup-title">
+      <h3>Batik Puring Shirt</h3>
+      <h5>Rp 69.000</h5>
+    </div>
+    <div class="popup-checkout">
+      <div class="sizeOverlay">
+        <div class="checkbox-container">
+          <label for="sizeOverlay">Protection</label>
+          <p>Proteksi Kerusakan +</p>
+        </div>
+        <label for="sizeOverlay">Ukuran &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <label class="custom-checkbox">
+          <input type="checkbox" name="size" value="S">
+          <span class="checkbox-label">S</span>
+        </label>
+        <label class="custom-checkbox">
+          <input type="checkbox" name="size" value="M">
+          <span class="checkbox-label">M</span>
+        </label>
+        <label class="custom-checkbox">
+          <input type="checkbox" name="size" value="L">
+          <span class="checkbox-label">L</span>
+        </label>
+        <label class="custom-checkbox">
+          <input type="checkbox" name="size" value="XL">
+          <span class="checkbox-label">XL</span>
+        </label>
+        <label class="custom-checkbox">
+          <input type="checkbox" name="size" value="XXL">
+          <span class="checkbox-label">XXL</span>
+        </label>
+        <div class="quantity-container">
+          <label for="quantity">Kuantitas &nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <button id="quantity-decrease-btn" onclick="decreaseQuantity()">-</button>
+          <input type="text" id="quantity" name="quantity" min="1" value="1">
+          <button id="quantity-increase-btn" onclick="increaseQuantity()">+</button>
+        </div>
+        <button class="checkout">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  <div class="description">
+    <div class="product-description">
+      <p><em>"Arjuna Batik features a blend of deep black, creamy vanilla, and rich brown. Celebrating Indonesian
+          craftsmanship, this versatile piece exudes timeless elegance, making it perfect for both formal and
+          casual occasions." </em> <br>
+      </p>
+      <ul class="my-list">
+        <li>Made from 100% natural fiber (viscose)</li>
+        <li>Featuring a wide collar</li>
+        <li>Boasting a comfortable and stylish boxy fit</li>
+        <li>Please note that the color and prints may vary from one shirt to another due to the hand-printing process.
+        </li>
+        <li>Our model stands at 178 cm tall and is wearing a size L. To find your perfect fit, consult our size chart.
+          These shirts are available<br> in sizes ranging from S to XXL.
+        </li>
+      </ul>
+      <p>Taking care of your batik shirt is easy: simply machine wash it on a gentle cycle (avoid using strong
+        detergents), and hang it to dry. If needed, you can give it a warm ironing touch-up.</p>
+    </div>
+  </div>
+</div>
   <div class="overlay" id="gambar-2">
     <a href="#" class="close">&times;</a>
     <div class="popup-title">
