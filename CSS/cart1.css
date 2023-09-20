@@ -81,7 +81,7 @@ header .shopping span{
 }
 .active .container{
    transform: translateX(-200px);
-}
+} 
 .card h1{
     color: #9f8b3a;
     font-weight: 100;

@@ -11,7 +11,7 @@ openShopping.addEventListener('click', ()=>{
 })
 closeShopping.addEventListener('click', ()=>{
     body.classList.remove('active');
-})
+})  
 
 let products = [
     {
@@ -64,7 +64,7 @@ function initApp(){
         list.appendChild(newDiv);
     })
 }
-initApp();
+initApp(); 
 function addToCard(key){
     if(listCards[key] == null){
         // copy product form list to list card
