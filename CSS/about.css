@@ -72,19 +72,6 @@ body {
   display: none;
 }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Warna latar belakang dengan transparansi */
-  filter: blur(0); /* Efek blur awal (0 jika tidak ingin ada blur) */
-  z-index: -1; /* Mengatur elemen ini ke lapisan belakang */
-  pointer-events: none; /* Membuat elemen ini non-interaktif */
-  transition: filter 0.3s ease; /* Efek transisi saat mematikan blur */
-}
-
 /* List Mobile */
 .header .navbarbutton1{
   color: #786337;
@@ -222,6 +209,7 @@ body {
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+/*Drop Down Menu */
 .dropdown-menu.open{
   position: fixed;
   /* margin-top: 30px; */
@@ -229,6 +217,7 @@ body {
   height: 210px;
 }
 
+/*Drop Down Menu */
 .dropdown-menu a{
   padding: 0.7rem;
   color: white;
@@ -237,6 +226,7 @@ body {
   justify-content: center;
 }
 
+/*Drop Down Menu */
 .dropdown-menu .navbarbutton:hover{
   background-color: #cd7416e8;  
 }
