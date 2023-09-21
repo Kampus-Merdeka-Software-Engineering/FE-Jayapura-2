@@ -74,15 +74,14 @@ function increaseQuantity() {
     }
   }
 
-const customCheckboxes = document.querySelectorAll('.custom-checkbox');
+  const customRadios = document.querySelectorAll('.custom-radio input[type="radio"]');
 
-customCheckboxes.forEach((checkbox) => {
-  const inputCheckbox = checkbox.querySelector('input[type="checkbox"]');
-  const checkboxLabel = checkbox.querySelector('.checkbox-label');
-
-  checkboxLabel.addEventListener('click', () => {
-    if (!inputCheckbox.disabled) {
-      inputCheckbox.checked = !inputCheckbox.checked;
-    }
+  customRadios.forEach((radio) => {
+    radio.addEventListener('click', () => {
+      if (radio.checked) {
+        radio.checked = false;
+      }
+    });
   });
-});
+
+  
