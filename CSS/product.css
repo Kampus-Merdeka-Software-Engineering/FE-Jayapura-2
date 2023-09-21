@@ -191,7 +191,6 @@ body {
     "sidebar content1 content2 content3"
     "sidebar content4 content5 content6"
     "sidebar content7 content8 content9"
-    "content10 content10 content10 content10"
     "footer footer footer footer";
   grid-gap: 0.2rem;
 }
@@ -256,8 +255,8 @@ main {
   line-height: 2;
   margin-left: 10px;
   margin-top: 15px;
-  margin-right: 20px;
-  padding: 50px;
+  margin-right: 15px;
+  padding: 40px;
 }
 
 #ptype {
@@ -401,32 +400,6 @@ input[type="checkbox"]::before {
   grid-area: content9;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
-}
-
-#content10 {
-  grid-area: content10;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
-  text-align: center;
-  padding-bottom: 50px;
-  z-index: 1;
-}
-
-.pagination {
-  display: inline-block;
-}
-
-.pagination a {
-  color: black;
-  float: left;
-  padding: 8px 16px;
-  text-decoration: none;
-  transition: background-color .3s;
-  border: 1px solid #ddd;
-}
-
-.pagination a:hover:not(.active) {
-  background-color: #ddd;
 }
 
 h3 {
