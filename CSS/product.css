@@ -493,16 +493,34 @@ h3 {
   margin-left: -155px;
 }
 
-.popup-title h3 {
+.popup-title h2 {
   font-size: 24px;
   color: black;
   white-space: nowrap;
 }
 
-.popup-title h5 {
+.popup-title h3 {
   margin-left: 1px;
   margin-top: 5px;
   color: #785B35;
+}
+
+.rating {
+  display: inline-flex;
+  align-items: center;
+}
+
+.rating-number {
+  font-size: 20px; /* Ukuran font angka keterangan */
+  color: #888; /* Warna angka keterangan */
+  margin-right: 5px; /* Jarak antara angka keterangan dengan ikon bintang */
+}
+
+.star {
+  font-size: 24px; /* Ukuran ikon bintang */
+  color: #C08261;
+  margin-left: 1px;
+  margin-right: -4px;
 }
 
 .popup-checkout p {
@@ -540,7 +558,7 @@ h3 {
 }
 
 .popup-checkout{
-  margin-top: -42px;
+  margin-top: -85px;
 }
 
 .product-description {
@@ -570,34 +588,34 @@ h3 {
   padding: -80;
 }
 
-.checkbox-container {
+.radio-container {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.checkbox-container p {
+.radio-container p {
   margin-right: 224px;
   white-space: nowrap;
 }
 
-.checkbox-container label {
+.radio-container label {
   flex: 1;
   margin-right: 10px;
 
 }
 
-.custom-checkbox {
+.custom-radio {
   display: inline-block;
   cursor: pointer;
   padding: 1px;
 }
 
-.custom-checkbox input[type="checkbox"] {
+.custom-radio input[type="radio"] {
   display: none;
 }
 
-.custom-checkbox .checkbox-label {
+.custom-radio .radio-label {
   position: relative;
   width: 36px;
   height: 24px;
@@ -608,19 +626,20 @@ h3 {
   background-color: #fff;
 }
 
-.custom-checkbox:hover .checkbox-label {
+.custom-radio:hover .radio-label {
   border-color: #C08261;
 }
 
-.custom-checkbox input[type="checkbox"]:checked+.checkbox-label {
+.custom-radio input[type="radio"]:checked+.radio-label {
   border: 1.5px solid #C08261;
+  background-color: rgba(192, 130, 97, 0.1);
 }
 
-.custom-checkbox.disabled {
+.custom-radio.disabled {
   cursor: not-allowed;
 }
 
-.custom-checkbox.disabled .checkbox-label {
+.custom-radio.disabled .radio-label {
   background-color: #ccc;
   pointer-events: none;
 }
