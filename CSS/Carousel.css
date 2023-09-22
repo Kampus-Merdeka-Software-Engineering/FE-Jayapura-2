@@ -382,24 +382,32 @@ body {
     }
 }
 
-/* article */
 @media(max-width: 574px) {
     .footer-col {
         width: 100%;
     }
 }
 
+/* article */
 @media (max-width: 768px) {
-    .section {
+    .article {
         width: 100%;
     }
 }
 
+/* img {
+    max-width: 100%;
+    height: auto;
+  } */
+
 @media (max-width: 768px) {
-    .privacy-policy {
-        width: 100%;
+    img {
+      max-width: 88%;
+      height: auto;
+      margin-left: 70px;
+      margin-right: 70px;
     }
-}
+  }
 
 @keyframes fadeInUp {
     0% {
@@ -411,3 +419,4 @@ body {
       transform: translateY(0px);
     }
 }
+
