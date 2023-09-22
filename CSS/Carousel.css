@@ -209,7 +209,7 @@ body {
     color: #786337;
     font-family: font-desc-foot;
     line-height: 1.5;
-    text-align: left;
+    text-align: justify;
     animation: fadeInUp 2s ease;
 }
 
