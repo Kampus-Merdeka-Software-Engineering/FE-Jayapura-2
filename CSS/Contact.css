@@ -246,7 +246,7 @@ body {
     color: #eee;
   }
 section {
-  padding: 90px 0px 50px 0px;
+  padding: 80px 0px 50px 0px;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
@@ -271,110 +271,13 @@ section {
     background-color:#786337;
 } */
 
-section .container {
-  position: relative;
-  min-width: 1100px;
-  min-height: 550px;
-  /* display: flex; */
-  z-index: 1000;
-  justify-content: center;
-}
-
-section .container .contactinfo {
-  position: absolute;
-  top: 40px;
-  width: 350px;
-  height: calc(100% - 80px);
-  background-color: #786337;
-  z-index: 1;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
-}
-
-section .container .contactinfo h2 {
-  color: white;
-  font-size: 24px;
-  font-weight: 500;
-}
-
-section .container .contactinfo .info {
-  position: relative;
-  margin: 20px 0;
-}
-
-section .container .contactinfo .info li {
-  position: relative;
-  list-style: none;
-  display: flex;
-  margin: 20px 0;
-  cursor: pointer;
-  align-items: flex-start;
-}
-
-section .container .contactinfo .info li span:nth-child(1) {
-  width: 30px;
-  min-width: 30px;
-}
-
-section .container .contactinfo .info li span:nth-child(1) img {
-  max-width: 100%;
-  filter: invert(1);
-  opacity: 0.5;
-}
-
-section .container .contactinfo .info li span:nth-child(2) {
-  color: white;
-  margin-left: 10px;
-  font-weight: 300;
-  opacity: 0.5;
-}
-
-section .container .contactinfo .info li span:nth-child(1) img,
-section .container .contactinfo .info li span:nth-child(2) {
-  opacity: 0.5;
-}
-
-section .container .contactinfo .sci img {
-  width: 30px;
-  height: 30px;
-}
-
-section .container .contactinfo .sci {
-  position: relative;
-  display: flex;
-}
-
-section .container .contactinfo .sci li {
-  list-style-type: none;
-  margin-right: 15px;
-}
-
-section .container .contactinfo .sci li a {
-  text-decoration: none;
-}
-
-section .container .contactinfo .sci li a img {
-  filter: invert(1);
-  opacity: 0.5;
-}
-
-section .container .contactinfo .sci li:hover a img {
-  opacity: 1;
-}
-
 section .container .contactform {
   position: absolute;
   padding: 50px 50px;
   background: #f6f4f3;
-  /* margin-left: 150px; */
   padding-left: 50px;
-  /*   */
   width: 100%;
   height: 100%;
-  /* box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5); */
 }
 
 section .container .contactform h2 {
@@ -718,11 +621,10 @@ section .container .contactform .formbox .inputbox input[type="submit"]:hover {
   }
 }
 
-/* About US */
+/* Contact US */
 @media screen and (max-width: 768px) {
     .heading h1 {
       font-size: 30px;
-      margin-top: 80px;
       padding: 30px;
       padding-left: 40px;
       
