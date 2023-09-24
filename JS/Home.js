@@ -30,16 +30,13 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector(".popup .close-btn").addEventListener("click", function () {
             document.querySelector(".popup").classList.remove("active");
         });
+        document.querySelector("#showOverlay").addEventListener("click", function () {
+            document.querySelector(".overlay").classList.add("active");
+        });
+        document.querySelector(".overlay .closeOverlay").addEventListener("click", function () {
+            document.querySelector(".overlay").classList.remove("active");
+        });
     });
-
-document.addEventListener("DOMContentLoaded", function () {
-    document.querySelector("#show-login").addEventListener("click", function () {
-        document.querySelector(".popup").classList.add("active");
-    });
-    document.querySelector(".popup .close-btn").addEventListener("click", function () {
-        document.querySelector(".popup").classList.remove("active");
-    });
-});
 
 document.addEventListener("DOMContentLoaded", function () {
     const slides = document.querySelectorAll(".img-slide");
