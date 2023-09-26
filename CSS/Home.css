@@ -581,6 +581,7 @@ section {
   font-size: 40px;
   text-align: center;
   color: #786337;
+  padding: 30px;
 }
 
 /* Categories */
@@ -755,6 +756,7 @@ img {
   font-size: 40px;
   font-weight: 600;
   color: #786337;
+  padding: 30px
 }
 
 /* Sale Section */
@@ -1077,6 +1079,102 @@ img {
     width: 100%;
   }
 }
+
+
+@media screen and (min-width: 1024px) {
+  }
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+}
+
+/* On Sale */
+@media screen and (max-width: 768px) {
+  /* Best Seller */
+  .categories h1 {
+    font-size: 30px;
+  }
+  .wrapper{
+    flex-direction: column;
+  }
+
+
+  /* Contact Us */
+  .ContactUs_container {
+    margin :30px;
+  }
+  .header__content h1 {
+    font-size: 30px;
+  }
+  .header__content p {
+    font-size: 20px;
+  }
+  .header__content a {
+    padding: 15px 20px;
+  }
+  .header__content button {
+    padding: 10px 30px;
+  }
+  /* susah ini */
+  /* .header__image img {
+    height: 580px;
+    max-width: 100%;
+    position: absolute;
+    bottom: -11.1rem;
+  } */
+  /* Categories */
+  .section__grid {
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+  }
+  .categories_subtitle {
+    font-size: 35px;
+  }
+  .categories_btn {
+    padding: 15px 20px;
+    font-size: 10px;
+  }
+  /* On sale */
+  .section__container {
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+  }
+  .categories_title {
+    font-size: 25px;
+  }
+  .section__title {
+    font-size: 25px;
+  }
+  .sale__title {
+    font-size: 25px;
+  }
+  .sale__title span {
+    font-size: 25px;
+  }
+  .sale__subtitle {
+    font-size: 15px;
+  }
+  .sale__btn{
+    padding: 10px 15px;
+    font-size: 5px;
+  }
+  /* News Section */
+  .news {
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  }
+  .news_details p {
+    font-size: 15px;
+  }
+  .news_details h4 {
+    font-size: 20px;
+  }
+}
+
+
+
 
 /* footer */
 @media (max-width: 767px) {
