@@ -1047,38 +1047,6 @@ img {
   }
 }
 
-/* about section */
-@media screen and (max-width: 768px) {
-  .heading h1 {
-    font-size: 1.3em;
-    margin-top: px;
-  }
-  .hero {
-    margin: 0px;
-  }
-  .container {
-    width: 100%;
-    flex-direction: column;
-    margin: 0px;
-    padding: 0px 40px;
-  }
-  .hero-content {
-    width: 100%;
-    margin: 35px 0px;
-  }
-  .hero-content h2 {
-    font-size: 1em;
-  }
-  .hero-content p {
-    font-size: 18px;
-  }
-  .hero-content button {
-    font-size: 16px;
-  }
-  .hero-image {
-    width: 100%;
-  }
-}
 
 @media screen and (max-width: 768px) {
   /* Carousel atas*/
@@ -1150,6 +1118,36 @@ img {
     .categories_btn {
       padding: 15px 20px;
       font-size: 10px;
+    }
+    /* About Us */
+    .heading h1 {
+      font-size: 1.3em;
+      margin-top: 10px;
+    }
+    .hero {
+      margin: 0px;
+    }
+    .container {
+      width: 100%;
+      flex-direction: column;
+      margin: 0px;
+      padding: 0px 40px;
+    }
+    .hero-content {
+      width: 100%;
+      margin: 35px 0px;
+    }
+    .hero-content h2 {
+      font-size: 1em;
+    }
+    .hero-content p {
+      font-size: 18px;
+    }
+    .hero-content button {
+      font-size: 16px;
+    }
+    .hero-image {
+      width: 100%;
     }
     /* On sale */
     .section__container {
