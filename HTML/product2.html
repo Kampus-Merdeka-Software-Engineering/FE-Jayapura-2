@@ -9,6 +9,8 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../JS/product-data.js"></script>
     <script src="../JS/product2.js"></script>
   </head>
 
@@ -95,6 +97,59 @@
       </div>
     </div>
 
+    <!-- Modal Detail -->
+    <div class="overlay">
+      <button class="closeOverlay">&times;</button>
+      <div class="content-image">
+        <div class="image-container">
+          <img id="gambar-produk1" class="gambar-produk1" src="" alt="gambar1">
+        </div>
+        <div class="image-container">
+          <img id="gambar-produk2" class="gambar-produk2" src="" alt="gambar2">
+          <img id="gambar-produk3" class="gambar-produk2" src="" alt="gambar2">
+        </div>
+      </div>
+      <section class="product-content">
+        <div class="popup-title">
+          <h2 id="nama-produk"></h2>
+          <h3>Rp <span id="harga-produk"></span></h3>
+        </div>
+        <div class="popup-checkout">
+          <div class="sizeOverlay">
+            <div class="radio-container">
+            <label for="sizeOverlay">Ukuran &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <label class="custom-radio">
+              <input type="radio" name="size" value="S">
+              <span class="radio-label">S</span>
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="size" value="M">
+              <span class="radio-label">M</span>
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="size" value="L">
+              <span class="radio-label">L</span>
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="size" value="XL">
+              <span class="radio-label">XL</span>
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="size" value="XXL">
+              <span class="radio-label">XXL</span>
+            </label>
+            <div class="quantity-container">
+              <label for="quantity">Kuantitas &nbsp;&nbsp;&nbsp;&nbsp;</label>
+              <button id="quantity-decrease-btn" onclick="decreaseQuantity()">-</button>
+              <input type="text" id="quantity" name="quantity" min="1" value="1">
+              <button id="quantity-increase-btn" onclick="increaseQuantity()">+</button>
+            </div>
+            <button class="checkout">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
     <!-- Footer -->
     <footer>
       <div class="footer">
@@ -118,12 +173,10 @@
             </ul>
           </div>
           <div class="footer-col">
-            <h4>Product Selections</h4>
+            <h4>Product Categories</h4>
             <ul>
-              <li><a href="#">Batik Tunics</a></li>
-              <li><a href="#">Batik Dresses</a></li>
-              <li><a href="#">Batik Men's</a></li>
-              <li><a href="#">Batik Skirts</a></li>
+              <li><a href="./product2.html?category=man">Man Collection</a></li>
+              <li><a href="./product2.html?category=woman">Woman Collection</a></li>
             </ul>
           </div>
           <div class="footer-col">
