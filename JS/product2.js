@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 1,
       name: "Arjuna Batik Shirt",
-      image: "Batik Pria/Arjuna Batik Shirt1.jpg",
+      image: "Batik Pria/Arjuna Batik Shirt.jpg",
       price: 120000,
     },
     {
@@ -50,8 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
       newDiv.innerHTML = `
             <img src="../Assets/${value.image}">
             <div class="title">${value.name}</div>
-            <div class="price">${value.price.toLocaleString()}</div>
-            <button onclick="addToCard(${key})">Add To Card</button>`;
+            <div class="price">${value.price.toLocaleString()}</div>`;
       list.appendChild(newDiv);
     });
   }
