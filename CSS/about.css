@@ -603,7 +603,20 @@ body {
 }
 
 /* About US */
+/* @media screen and (max-width: 856px) {
+  .container {
+    display: flex;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 40px;
+  }
+}
+*/
 @media screen and (max-width: 768px) {
+  .responsive {
+    max-width: 100%;
+    height: auto;
+  } 
   .heading h1 {
     font-size: 30px;
     margin-top: 80px;
@@ -628,14 +641,16 @@ body {
     font-size: 30px;
   }
   .hero-content p {
+    width: 100%;
     font-size: 18px;
   }
   .hero-content button {
     font-size: 16px;
   }
   .hero-image img {
-    width: 668px;
-    height: 600px;
+    justify-content: center;
+    width: 80%;
+    height: auto;
     margin: 0px;
   }
   .hero2 {
@@ -662,8 +677,8 @@ body {
     font-size: 16px;
   }
   .hero2-image img {
-    width: 668px;
-    height: 600px;
+    width: 80%;
+    height: auto;
     margin-bottom: 30px;
   }
 }
