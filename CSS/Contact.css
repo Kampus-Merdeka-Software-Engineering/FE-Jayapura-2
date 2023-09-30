@@ -628,6 +628,12 @@ section .container .contactform .formbox .inputbox input[type="submit"]:hover {
       padding-left: 40px;
       
     }
+    .wrapper .card_container {
+      width: auto;
+      height: 80%;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
     .hero {
       margin: 0px;
     }
