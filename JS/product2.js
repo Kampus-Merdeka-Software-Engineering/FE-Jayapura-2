@@ -65,33 +65,19 @@ $(function () {
   }
 
   // ga digunakan kalau sudah pakai api
-  const products = getCategory === 'man' ? productsMan : productsWoman
-  // function getProducts() {
-  //   fetch("http://localhost:3333/products", {
-  //     method: 'GET',
-  //     mode: 'no-cors',
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //     }
-  //   })
-  //     .then(function (response) {
-  //       if (response.ok) {
-  //         return response.json();
-        
-  //       }
-  //       return Promise.reject(response);
-  //     })
-  //     .then(function(data){
-  //       console.log(data.data);
-  //     })
-  //     .catch(function (error) {
-  //       console.log(error);
-  //     });
+  // const products = getCategory === 'man' ? productsMan : productsWoman
 
-  // }
+  const product1 = getProducts();
+  console.log(product1);
+  function getProducts() {
+    fetch("http://localhost:3333/products")
+          .then(res => res.json())     
+          .then(data => data.data);
 
-  // getProducts();
-   initApp(products);
+  }
+
+  
+  initApp(getProducts());
   // ga digunakan kalau sudah pakai api
 
   // $.get(`https://merdeka.free.beeceptor.com/products?category=${getCategory}`, function(response){
