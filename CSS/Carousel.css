@@ -19,7 +19,7 @@
 
 @font-face {
     font-family: font-logo;
-    src: url(/Assets//RocaOne-Bold.ttf);
+    src: url(../Assets//RocaOne-Bold.ttf);
 }
 
 body {
