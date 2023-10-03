@@ -9,17 +9,17 @@
 /* Font Custom */
 @font-face {
   font-family: allfont;
-  src: url(/Assets/Montserrat-SemiBold.ttf);
+  src: url(../Assets/Montserrat-SemiBold.ttf);
 }
 
 @font-face {
   font-family: font-desc-foot;
-  src: url(/Assets//Montserrat-Medium.ttf);
+  src: url(../Assets//Montserrat-Medium.ttf);
 }
 
 @font-face {
   font-family: font-logo;
-  src: url(/Assets//RocaOne-Bold.ttf);
+  src: url(../Assets//RocaOne-Bold.ttf);
 }
 
 body {
