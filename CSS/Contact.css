@@ -238,7 +238,7 @@ body {
     animation: fadeInUp 2s ease;
     padding: 50px;
     padding-left: 50px;
-    background-image: url('/Assets/p&P.jpeg');
+    background-image: url('../Assets/p&P.jpeg');
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: center;
