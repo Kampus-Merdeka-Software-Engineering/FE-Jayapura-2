@@ -52,14 +52,16 @@ $(function () {
   function initApp(products) {
     console.log("products", products);
     products.forEach((value, key) => {
+      console.log("value")
+      console.log(value);
       let newDiv = document.createElement("div");
       newDiv.classList.add("item");
       newDiv.innerHTML = `
             <img id="klik" src="../Assets/${
               value.image
             }" onclick="popup('${escapeHtml(JSON.stringify(value))}')">
-            <div class="title">${value.name}</div>
-            <div class="price">${value.price.toLocaleString()}</div>`;
+            <div class="title">${value.nama}</div>
+            <div class="price">${value.harga.toLocaleString()}</div>`;
       list.appendChild(newDiv);
     });
   }
@@ -67,14 +69,13 @@ $(function () {
   // ga digunakan kalau sudah pakai api
   // const products = getCategory === 'man' ? productsMan : productsWoman
 
-  const product1 = [];
-  console.log(product1);
   function getProducts() { 
     fetch("http://localhost:3333/products")
           .then(res => res.json())     
           .then(function(data){
-            console.log(data)
-            product1=data.data
+            console.log(data);
+            console.log("======")
+            initApp(data);
           });
 
   }
