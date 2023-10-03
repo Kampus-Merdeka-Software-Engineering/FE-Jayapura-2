@@ -67,17 +67,20 @@ $(function () {
   // ga digunakan kalau sudah pakai api
   // const products = getCategory === 'man' ? productsMan : productsWoman
 
-  const product1 = getProducts();
+  const product1 = [];
   console.log(product1);
-  function getProducts() {
+  function getProducts() { 
     fetch("http://localhost:3333/products")
           .then(res => res.json())     
-          .then(data => data.data);
+          .then(function(data){
+            console.log(data)
+            product1=data.data
+          });
 
   }
 
-  
-  initApp(getProducts());
+  getProducts();
+  //initApp(getProducts());
   // ga digunakan kalau sudah pakai api
 
   // $.get(`https://merdeka.free.beeceptor.com/products?category=${getCategory}`, function(response){
