@@ -242,7 +242,7 @@ section{
     padding-left: 90px;
     font-size: 30px;
     font-weight: bold;
-    background-image: url('/Assets/p&P.jpeg');
+    background-image: url('../Assets/p&P.jpeg');
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: center center;
