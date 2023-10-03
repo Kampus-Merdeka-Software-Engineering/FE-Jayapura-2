@@ -84,7 +84,7 @@ body {
 /* Login Pop Up */
 .popup {
   z-index: 1000;
-  position: absolute;
+  position: fixed;
   top: -150%;
   left: 50%;
   opacity: 0;
