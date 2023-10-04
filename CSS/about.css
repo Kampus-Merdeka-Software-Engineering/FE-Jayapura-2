@@ -9,17 +9,17 @@
 /* Font Custom */
 @font-face {
   font-family: allfont;
-  src: url(/Assets/Montserrat-SemiBold.ttf);
+  src: url(../Assets/Montserrat-SemiBold.ttf);
 }
 
 @font-face {
   font-family: font-desc-foot;
-  src: url(/Assets//Montserrat-Medium.ttf);
+  src: url(../Assets//Montserrat-Medium.ttf);
 }
 
 @font-face {
   font-family: font-logo;
-  src: url(/Assets//RocaOne-Bold.ttf);
+  src: url(../Assets//RocaOne-Bold.ttf);
 }
 
 body {
@@ -238,10 +238,9 @@ body {
   font-size: 40px;
   text-align: left;
   animation: fadeInUp 2s ease;
-
   padding: 50px;
   padding-left: 90px;
-  background-image: url('/Assets/p&P.jpeg');
+  background-image: url('../Assets/p&P.jpeg');
   background-size: cover;
   background-repeat: no-repeat; 
   background-position: center;
@@ -612,6 +611,7 @@ body {
   }
 }
 */
+<<<<<<< HEAD
 /*@media screen and (max-width: 110px) {
   .hero-image img {
     width: 0%;
@@ -620,13 +620,15 @@ body {
   }*/
 
 @media screen and (max-width: 768px) {
+=======
+>>>>>>> b7773ddedff6ce95a82ee3a11fff84d2cd006cf0
 
+@media screen and (min-width: 769px) and (max-width: 1278px) {
   .heading h1 {
     font-size: 30px;
     margin-top: 80px;
     padding: 30px;
     padding-left: 40px;
-    
   }
   .hero {
     margin: 0px;
@@ -653,7 +655,7 @@ body {
     font-size: 16px;
   }
   .hero-image img {
-    width: 80%;
+    width: 100%;
     height: auto;
     margin: 0px;
   }
@@ -681,7 +683,73 @@ body {
     font-size: 16px;
   }
   .hero2-image img {
-    width: 80%;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heading h1 {
+    font-size: 30px;
+    margin-top: 80px;
+    padding: 30px;
+    padding-left: 40px;
+  }
+  .hero {
+    margin: 0px;
+  }
+  .container {
+    width: 100%;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px 40px;
+  }
+  .hero-content {
+    width: 100%;
+    margin: 35px 0px;
+  }
+  .hero-content h2 {
+    font-size: 30px;
+  }
+  .hero-content p {
+    width: 100%;
+    font-size: 18px;
+  }
+  .hero-content button {
+    font-size: 16px;
+  }
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+  }
+  .hero2 {
+    margin: 0px;
+  }
+  .container2 {
+    width: 100%;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px 40px;
+  }
+  .hero2-content {
+    width: 100%;
+    margin-top: 35px;
+  }
+  .hero2-content h2 {
+    font-size: 30px;
+  }
+  .hero2-content p {
+    font-size: 18px;  
+    margin-bottom: 10px;
+  }
+  .hero2-content button {
+    font-size: 16px;
+  }
+  .hero2-image img {
+    width: 100%;
     height: auto;
     margin: 0px;
     margin-bottom: 30px;

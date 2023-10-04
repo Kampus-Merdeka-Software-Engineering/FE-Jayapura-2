@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/product2.css" />
+    <title>Product</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../JS/product-data.js"></script>
+    <script src="../JS/product2.js"></script>
+  </head>
+
+  <body class="">
+    <!-- All Navigation Bar -->
+    <header class="header">
+      <!-- Gambar Logo -->
+      <img src="../Assets/Logo1.svg" alt="" class="logo" />
+      <img src="../Assets/logo-batik.png" alt="" class="logo1" />
+      <!-- Navigation Button -->
+      <nav class="navbar">
+        <a href="../index.html" class="navbarbutton">Home</a>
+        <a href="../HTML/product.html" class="navbarbutton">Product</a>
+        <a href="../HTML/AboutUs.html" class="navbarbutton">About Us</a>
+        <a href="../HTML/Contact.html" class="navbarbutton">Contact</a>
+        <button id="show-login" class="navbarbutton">Login</button>
+        <button class="navbarbutton1">
+          <img src="../Assets/bars-solid.svg" alt="" />
+        </button>
+        <div class="shopping">
+          <img src="/Assets/cart-shopping-solid.svg" alt="" />
+          <span class="quantity">0</span>
+        </div>
+      </nav>
+    </header>
+    <!-- Drop Down Menu -->
+    <div class="dropdown-menu">
+      <a href="../index.html" class="navbarbutton">Home</a>
+      <a href="../HTML/product.html" class="navbarbutton">Product</a>
+      <a href="../HTML/AboutUs.html" class="navbarbutton">About Us</a>
+      <a href="../HTML/Contact.html" class="navbarbutton">Contact</a>
+      <a href="../HTML/Login2.html" class="navbarbutton">Login</a>
+    </div>
+    <!-- Login Pop Up Method -->
+    <div class="popup">
+      <div class="close-btn">&times;</div>
+      <div class="form">
+        <h2>Log in</h2>
+        <div class="form-element">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter Email" />
+        </div>
+        <div class="form-element">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter Password" />
+        </div>
+        <div class="form-element">
+          <input type="checkbox" id="remember-me" />
+          <label for="remember-me">Remember me</label>
+        </div>
+        <div class="form-element">
+          <button>Sign in</button>
+        </div>
+        <div class="form-element">
+          <a href="../HTML/Signup.html" target="_blank">Create Account ?</a>
+          <p>or</p>
+          <a href="../HTML/Resetpass.html" target="_blank">Forgot Password</a>
+        </div>
+      </div>
+    </div>
+    <!-- Products -->
+    <div class="container">
+      <nav class="judul">
+        <h1>Batik for Men</h1>
+      </nav>
+      <main>
+        <p class="describe">
+          Indulge in the allure of Batik fashion at our E-commerce hub. Here,
+          you'll find a curated collection of Batik garments that exude both
+          tradition and modernity. Immerse yourself in the intricate details of
+          each piece, handcrafted with love and a deep appreciation for
+          Indonesia's cultural heritage. Explore our online store and embrace
+          the essence of Batik like never before
+        </p>
+        <ul class="point1">
+          <li>
+            <a href="#"><i class="fa fa-truck"></i></a>
+            <h1>Free home delivery</h1>
+            <p>Free shipping on orders over a certain amount.</p>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-check-circle"></i></a>
+            <h1>Quality product</h1>
+            <p>Produced to high production standards.</p>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-calendar"></i></a>
+            <h1>3 days return</h1>
+            <p>
+              Exchange purchased items if they don't meet your expectations.
+            </p>
+          </li>
+        </ul>
+      </main>
+      <div class="container2">
+        <div class="list"></div>
+      </div>
+      <div class="card">
+        <ul class="listCard"></ul>
+      </div>
+    </div>
+
+    <!-- Modal Detail -->
+    <div class="overlay">
+      <button class="closeOverlay">&times;</button>
+      <div class="content-image">
+        <div class="image-container">
+          <img
+            id="gambar-produk1"
+            class="gambar-produk1"
+            src=""
+            alt="gambar1"
+          />
+        </div>
+        <div class="image-container">
+          <img
+            id="gambar-produk2"
+            class="gambar-produk2"
+            src=""
+            alt="gambar2"
+          />
+          <img
+            id="gambar-produk3"
+            class="gambar-produk2"
+            src=""
+            alt="gambar2"
+          />
+        </div>
+      </div>
+      <section class="product-content">
+        <div class="popup-title">
+          <h2 id="nama-produk"></h2>
+          <h3>Rp <span id="harga-produk"></span></h3>
+        </div>
+        <div class="popup-checkout">
+          <div class="sizeOverlay">
+            <div class="radio-container">
+              <label for="sizeOverlay"
+                >Ukuran &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</label
+              >
+              <label class="custom-radio">
+                <input type="radio" name="size" value="S" />
+                <span class="radio-label">S</span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="size" value="M" />
+                <span class="radio-label">M</span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="size" value="L" />
+                <span class="radio-label">L</span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="size" value="XL" />
+                <span class="radio-label">XL</span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="size" value="XXL" />
+                <span class="radio-label">XXL</span>
+              </label>
+              <div class="quantity-container">
+                <label for="quantity">Kuantitas &nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <button id="quantity-decrease-btn" onclick="decreaseQuantity()">
+                  -
+                </button>
+                <input
+                  type="text"
+                  id="quantity"
+                  name="quantity"
+                  min="1"
+                  value="1"
+                />
+                <button id="quantity-increase-btn" onclick="increaseQuantity()">
+                  +
+                </button>
+              </div>
+              <button class="checkout">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <!-- footer -->
+        <div class="row">
+          <div class="footer-col">
+            <img src="../Assets/LogoNuansa.svg" alt="" />
+            <div class="social-links">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Company & Store</h4>
+            <ul>
+              <p>Jl. Batik Indah No. 123</p>
+              <p>Batikland, Indonesia, 12345</p>
+              <p>Mobile : +62 123 4567 8901</p>
+              <p>Tel : +62 123 4567 8902</p>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Product Categories</h4>
+            <ul>
+              <li><a href="./product2.html?category=man">Man Collection</a></li>
+              <li>
+                <a href="./product2.html?category=woman">Woman Collection</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div class="footer-bottom">
+          <hr />
+          <p>Copyright &copy; Nuansa Batik 2023</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/CSS/Carousel.css">
+  <link rel="stylesheet" href="../CSS/Carousel.css">
   <title>Carousel</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <script src="../JS/Home.js"></script>
+  <script src="../JS/script.js" defer></script>
 </head>
 
 <body>
@@ -15,15 +16,27 @@
   <header class="header">
     <!-- Gambar Logo -->
     <img src="../Assets/Logo1.svg" alt="" class="logo" />
+    <img src="../Assets/logo-batik.png" alt="" class="logo1" />
     <!-- Navigation Button -->
     <nav class="navbar">
-      <a href="../HTML/Home.html" class="navbarbutton">Home</a>
-      <a href="../HTML/product.html" class="navbarbutton">Product</a>
+      <a href="../index.html" class="navbarbutton">Home</a>
+      <a href="../HTML/product2.html" class="navbarbutton">Product</a>
       <a href="../HTML/AboutUs.html" class="navbarbutton">About Us</a>
       <a href="../HTML/Contact.html" class="navbarbutton">Contact</a>
       <button id="show-login" class="navbarbutton">Login</button>
+      <button class="navbarbutton1">
+        <img src="../Assets/bars-solid.svg" alt="" />
+      </button>
     </nav>
   </header>
+  <!-- Drop Down Menu -->
+  <div class="dropdown-menu">
+    <a href="../index.html" class="navbarbutton">Home</a>
+    <a href="../HTML/product2.html" class="navbarbutton">Product</a>
+    <a href="../HTML/AboutUs.html" class="navbarbutton">About Us</a>
+    <a href="../HTML/Contact.html" class="navbarbutton">Contact</a>
+    <a href="../HTML/Login2.html" class="navbarbutton">Login</a>
+  </div>
   <!-- Login Pop Up Method -->
   <div class="popup">
     <div class="close-btn">&times;</div>
@@ -51,14 +64,13 @@
       </div>
     </div>
   </div>
-
   <!-- Carousel -->
   <article>
     <div class="article">
       <h1>HERITAGE IN FASHION</h1>
       <h2>Celebrate the heritage of batik fashion with our contemporary and traditional pieces  </h2>
         <figure>
-            <img src="/Assets/batik4.jpg">
+            <img src="../Assets/batik4.jpg">
         </figure>
         <p>Whether you're looking for a modern twist on tradition or a timeless classic, our collection offers a wide range of options to suit your style. Embrace the fusion of culture and fashion, and make a statement with each piece you wear.</p>
         <p>Fashion is not just about clothing; it's a form of self-expression and a way to showcase your cultural identity. Batik, with its rich history and intricate designs, serves as a canvas for both tradition and innovation. Our collection pays homage to this heritage while also pushing the boundaries of what batik fashion can be.</p>
@@ -69,7 +81,6 @@
         <p>So, whether you choose a traditional or contemporary piece from our collection, know that you are not just embracing fashion; you are embracing culture, history, and artistry. Celebrate the heritage of batik fashion with us and make a fashion statement that reflects the richness of Indonesia's cultural tapestry.</p>
     </div>
   </article>
-
   <!-- Footer -->
   <footer>
     <div class="footer">
@@ -95,17 +106,15 @@
         <div class="footer-col">
           <h4>Product Selections</h4>
           <ul>
-            <li><a href="#">Batik Tunics</a></li>
-            <li><a href="#">Batik Dresses</a></li>
-            <li><a href="/HTML/product.html">Batik Men's</a></li>
-            <li><a href="#">Batik Skirts</a></li>
+            <li><a href="../HTML/product.html">Man Collection</a></li>
+            <li><a href="#">Woman Collection</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="/HTML/privacy policy.html">Privacy Policy</a></li>
-            <li><a href="/HTML/TermsofService.html">Terms Of Service</a></li>
+            <li><a href="../HTML/privacy policy.html">Privacy Policy</a></li>
+            <li><a href="../HTML/TermsofService.html">Terms Of Service</a></li>
           </ul>
         </div>
       </div>

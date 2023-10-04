@@ -84,7 +84,7 @@ body {
 /* Login Pop Up */
 .popup {
   z-index: 1000;
-  position: absolute;
+  position: fixed;
   top: -150%;
   left: 50%;
   opacity: 0;
@@ -236,25 +236,22 @@ body {
     font-size: 40px;
     text-align: left;
     animation: fadeInUp 2s ease;
-  
     padding: 50px;
-    padding-left: 90px;
-    background-image: url('/Assets/p&P.jpeg');
+    padding-left: 50px;
+    background-image: url('../Assets/p&P.jpeg');
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: center;
     color: #eee;
   }
+
 section {
   padding: 80px 0px 50px 0px;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
   background: none;
-  animation: fadeInUp 2s ease;
-
   position: relative;
-  /* display: flex; */
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -277,13 +274,15 @@ section .container .contactform {
   background: #f6f4f3;
   padding-left: 50px;
   width: 100%;
-  height: 100%;
+  height: 500px;
+  animation: fadeInUp 2s ease;
 }
 
 section .container .contactform h2 {
   color: #786337;
   font-size: 24px;
   font-weight: 500;
+  animation: fadeInUp 2s ease;
 }
 
 section .container .contactform .formbox {
@@ -342,7 +341,7 @@ section .container .contactform .formbox .inputbox textarea:valid ~ span {
   font-weight: 12px;
   font-weight: 400;
   letter-spacing: 1px;
-  color: #ff568c;
+  color: #786337;
 }
 
 section .container .contactform .formbox .inputbox input[type="submit"] {
@@ -355,7 +354,7 @@ section .container .contactform .formbox .inputbox input[type="submit"] {
   padding: 12px;
 }
 section .container .contactform .formbox .inputbox input[type="submit"]:hover {
-  background: #ff568c;
+  background: #786337;
 }
 
 .founder {
@@ -403,6 +402,7 @@ section .container .contactform .formbox .inputbox input[type="submit"]:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: fadeInUp 2s ease;
 }
 
 .card .imbBx,
@@ -426,6 +426,7 @@ section .container .contactform .formbox .inputbox input[type="submit"]:hover {
   /* border-radius: 15px; */
   transition: bottom 0.5s;
   transition-delay: 0.65s;
+  animation: fadeInUp 2s ease;
 }
 
 .card:hover .content {
@@ -591,7 +592,6 @@ section .container .contactform .formbox .inputbox input[type="submit"]:hover {
   border: 0;
   height: 1px;
   margin-bottom: 5px;
-  /* margin-top: ; */
   background: rgb(255, 217, 192);
   background-image: rgb(246, 176, 128);
 }
@@ -659,5 +659,16 @@ section .container .contactform .formbox .inputbox input[type="submit"]:hover {
   }
   .dropdown-menu {
     display: block;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
