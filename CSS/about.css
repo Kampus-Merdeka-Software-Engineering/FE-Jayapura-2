@@ -611,6 +611,17 @@ body {
   }
 }
 */
+<<<<<<< HEAD
+/*@media screen and (max-width: 110px) {
+  .hero-image img {
+    width: 0%;
+    height: auto;
+    margin: 0px;
+  }*/
+
+@media screen and (max-width: 768px) {
+=======
+>>>>>>> b7773ddedff6ce95a82ee3a11fff84d2cd006cf0
 
 @media screen and (min-width: 769px) and (max-width: 1278px) {
   .heading h1 {
@@ -631,6 +642,7 @@ body {
   .hero-content {
     width: 100%;
     margin: 35px 0px;
+  
   }
   .hero-content h2 {
     font-size: 30px;
