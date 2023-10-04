@@ -74,6 +74,12 @@ body {
   border: none;
   cursor: pointer;
 }
+.navbar button img{
+  width: 30px;
+  height: 30px;
+  border: none;
+  
+}
 
 /* Animation Button Navigation Bar */
 .navbar .navbarbutton.active,
@@ -448,7 +454,11 @@ section {
   transform: translateY(-50%);
   transition: transform 0.1s linear;
 }
+.wrapper i img{
+  margin-top: 7.8px;
+  width: 20px;
 
+}
 /* Best Seller Section */
 .wrapper i:active {
   transform: translateY(-50%) scale(0.9);
@@ -456,11 +466,11 @@ section {
 .wrapper i:hover {
   background: #f2f2f2;
 }
-.wrapper i:first-child {
+.wrapper  i:first-child {
   left: -22px;
   display: none;
 }
-.wrapper i:last-child {
+.wrapper  i:last-child {
   right: -22px;
 }
 .wrapper .carousel {
@@ -1485,7 +1495,7 @@ h2 {
   padding: 30px 0px;
 }
 .header__content p {
-  font-size: 0.9rem;
+  font-size: 18px;
   color: var(--text-light);
   margin-bottom: 2rem;
   font-family: "font-desc-foot";
@@ -1823,7 +1833,6 @@ h2 {
       font-size: 20px;
     }
 }
-
 @media screen and (min-width: 565px) and (max-width: 768px) {
   /* Carousel atas*/
     .home {
@@ -1883,6 +1892,7 @@ h2 {
     .header__image img {
       height: auto;
       max-width: 100%;
+
     }
     /* Categories */
     .section_category {
