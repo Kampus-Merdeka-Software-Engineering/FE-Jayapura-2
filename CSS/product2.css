@@ -264,7 +264,7 @@ header .shopping span{
 }
 
 nav.judul {
-  background-image: url("../Assets/Semua Produk/batik judul.jpg");
+  background-image: url(".../Assets/Semua Produk/batik judul.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   grid-area: nav;
