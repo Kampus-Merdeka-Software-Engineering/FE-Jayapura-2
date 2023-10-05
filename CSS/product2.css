@@ -35,6 +35,19 @@ body {
   align-items: center;
 }
 
+/* Logo */
+.logo {
+  display: inline-block;
+  width: 210px;
+  height: 70px;
+  font-family: font-logo;
+}
+
+/* Logo */
+.logo1 {
+  display: none;
+}
+
 /* Button Navigation Bar */
 .navbar .navbarbutton {
   font-size: 18px;
@@ -47,6 +60,12 @@ body {
   border: none;
   cursor: pointer;
 }
+.navbar button img{
+  width: 30px;
+  height: 30px;
+  border: none;
+  
+}
 
 /* Animation Button Navigation Bar */
 .navbar .navbarbutton.active,
@@ -54,45 +73,6 @@ body {
   font-weight: bolder;
   color: #c7a55b;
   background-color: none;
-}
-
-header .shopping{
-  position: relative;
-  text-align: right;
-}
-
-header .shopping img{
-  width: 30px;
-  height: 30px;
-}
-
-header .shopping span{
-  background-color: red;
-  border-radius: 30%;
-  width: 20px;
-  height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  color: #fff;
-  position: absolute;
-  top: -5px;
-  left: 80%;
-  padding: 3px 10px;
-  /* z-index: 999; */
-}
-
-/* Logo */
-.logo {
-  display: inline-block;
-  /*   float: left; */
-  width: 210px;
-  height: 70px;
-}
-
-/* Logo */
-.logo1 {
-  display: none;
 }
 
 /* List Mobile */
@@ -237,13 +217,6 @@ header .shopping span{
 }
 
 /* Login Pop Up */
-.popup .form .form-element p {
-  display: inline;
-  font-size: 15px;
-  color: black;
-}
-
-/* Login Pop Up */
 .popup .form .form-element a {
   display: inline;
   padding: 0 5px;
@@ -252,6 +225,13 @@ header .shopping span{
   color: #1a79ca;
   text-decoration: none;
   font-weight: 600;
+}
+
+/* Login Pop Up */
+.popup .form .form-element p {
+  display: inline;
+  font-size: 15px;
+  color: black;
 }
 
 :root {
