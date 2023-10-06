@@ -20,18 +20,49 @@
       </div>
       <div class="form-element">
         <label for="email">Email</label>
-      <input type="text" id="email" placeholder="Enter Email" />
+      <input type="text" id="username" placeholder="Enter Email" />
       </div>
       <div class="form-element">
         <label for="password">Password</label>
           <input type="password" id="password" placeholder="Enter Password" />
       </div>
       <div class="form-element">
-        <button class="signup">Sign Up</button>
+        <button class="signup" id="signup">Sign Up</button>
       </div>
       <div class="form-element">
         <button class="login" onclick="goToSignUpPage()">Login</button>
       </div>
     </div>
   </body>
+  <script>
+
+    var email = document.getElementById("email")
+    var password = document.getElementById("password")
+    var btn = document.getElementById("signup")
+  
+    btn.addEventListener("click", signup);
+    function signin() {
+      fetch("http://localhost:3333/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          username: username.value,
+          email: email.value,
+          password: password.value,
+        })
+      })
+        .then(function (response) {
+          if (response.ok) {
+            return response.json();
+          }
+          return Promise.reject(response);
+        }).then(function (data) {
+          alert(data.message);
+        }).catch(function (error) {
+          console.log(error);
+        });
+    }
+  </script>
 </html>
