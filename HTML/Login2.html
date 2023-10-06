@@ -1,38 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="https://kampus-merdeka-software-engineering.github.io/front-end-capstone-project-section-jayapura-group-2/CSS/Login2.css" />
-  </head>
-  <body>
-    <!-- Kotak Login -->
-    <div class="form">
-      <div class="logo">
-        <img src="https://kampus-merdeka-software-engineering.github.io/front-end-capstone-project-section-jayapura-group-2/Assets/logo-batik.png" alt="Logo" />
-      </div>
-      <h2>Log in</h2>
-      <div class="form-element">
-        <label for="email">Email</label>
-        <input type="text" id="email" placeholder="Enter Email" />
-      </div>
-      <div class="form-element">
-        <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Enter Password" />
-      </div>
-      <div class="form-element">
-        <input type="checkbox" id="remember-me" />
-        <label for="remember-me">Remember me</label>
-      </div>
-      <div class="form-element">
-        <button>Sign in</button>
-      </div>
-      <div class="form-element">
-        <a href="Signup.html">Create Account ?</a>
-        <p>or</p>
-        <a href="Resetpass.html">Forgot Password</a>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet"
+    href="https://kampus-merdeka-software-engineering.github.io/front-end-capstone-project-section-jayapura-group-2/CSS/Login2.css" />
+</head>
+
+<body>
+  <!-- Kotak Login -->
+  <div class="form">
+    <div class="logo">
+      <img
+        src="https://kampus-merdeka-software-engineering.github.io/front-end-capstone-project-section-jayapura-group-2/Assets/logo-batik.png"
+        alt="Logo" />
     </div>
-  </body>
+    <h2>Log in</h2>
+    <div class="form-element">
+      <label for="email">Email</label>
+      <input type="text" id="email" placeholder="Enter Email" />
+    </div>
+    <div class="form-element">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter Password" />
+    </div>
+    <div class="form-element">
+      <input type="checkbox" id="remember-me" />
+      <label for="remember-me">Remember me</label>
+    </div>
+    <div class="form-element">
+      <button id="login">Log in</button>
+    </div>
+    <div class="form-element">
+      <a href="Signup.html">Create Account ?</a>
+      <p>or</p>
+      <a href="Resetpass.html">Forgot Password</a>
+    </div>
+  </div>
+</body>
+<script>
+  var email = document.getElementById("email")
+  var password = document.getElementById("password")
+  var btn = document.getElementById("login")
+
+  btn.addEventListener("click", signin);
+  function signin() {
+    fetch("http://localhost:3333/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: email.value,
+        password: password.value,
+      })
+    })
+      .then(function (response) {
+        if (response.ok) {
+          return response.json();
+        }
+        return Promise.reject(response);
+      }).then(function (data) {
+        alert(data.message);
+      }).catch(function (error) {
+        console.log(error);
+      });
+  }
+</script>
+
 </html>
