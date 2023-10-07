@@ -9,17 +9,17 @@
 /* Font Custom */
 @font-face {
   font-family: allfont;
-  src: url(../Assets/Montserrat-SemiBold.ttf);
+  src: url(https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets/Montserrat-SemiBold.ttf);
 }
 
 @font-face {
   font-family: font-desc-foot;
-  src: url(../Assets//Montserrat-Medium.ttf);
+  src: url(https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets//Montserrat-Medium.ttf);
 }
 
 @font-face {
   font-family: font-logo;
-  src: url(../Assets//RocaOne-Bold.ttf);
+  src: url(https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets//RocaOne-Bold.ttf);
 }
 
 body {
@@ -248,7 +248,7 @@ body {
   animation: fadeInUp 2s ease;
   padding: 50px;
   padding-left: 90px;
-  background-image: url('../Assets/p&P.jpeg');
+  background-image: url('https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets/p&P.jpeg');
   background-size: cover;
   background-repeat: no-repeat; 
   background-position: center;
