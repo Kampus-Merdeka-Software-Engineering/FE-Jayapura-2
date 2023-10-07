@@ -71,23 +71,23 @@
           <h2>Send a Message</h2>
           <div class="formbox">
             <div class="inputbox w50">
-              <input type="text" name="" required />
+              <input type="text" name="nama_awal" required />
               <span>First Name</span>
             </div>
             <div class="inputbox w50">
-              <input type="text" name="" required />
+              <input type="text" name="nama_akhir" required />
               <span>Last Name</span>
             </div>
             <div class="inputbox w50">
-              <input type="text" name="" required />
+              <input type="text" name="email" required />
               <span>Email Address</span>
             </div>
             <div class="inputbox w50">
-              <input type="text" name="" required />
+              <input type="text" name="nomor_telepon" required />
               <span>Mobile Number</span>
             </div>
             <div class="inputbox w100">
-              <textarea name="" required></textarea>
+              <textarea name="pesan" required></textarea>
               <span>Write your message here</span>
             </div>
             <div class="inputbox w100">
@@ -285,4 +285,55 @@
       </div>
     </footer>
   </body>
+  <script>
+    // Post data dari contact form
+function postContactFormData(event) {
+    event.preventDefault();
+
+    // Ambil data dari form
+    // const formBox = document.querySelector('.formbox');
+    const form = event.target;
+    const nama_awal = form.querySelector('[name="name_awal"]').value;
+    const nama_akhir = form.querySelector('[name="name_akhir"]').value;
+    const email = form.querySelector('[name="email"]').value;
+    const nomor_telepon = form.querySelector('[name="nomor_telepon"]').value;
+    const pesan = form.querySelector('[name="pesan"]').value;
+    
+
+    // Buat objek data
+    const data = {
+        nama_awal: nama_awal,
+        nama_akhir: nama_akhir,
+        email: email,
+        nomor_telepon: nomor_telepon
+        pesan: pesan
+    };
+
+    // Kirim data sebagai JSON
+    fetch('https://localhost:3333/contact', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert('Terima kasih! Pesan Anda telah terkirim.');
+            form.reset();
+        } else {
+            alert('Maaf, terjadi kesalahan. Silakan coba lagi.');
+        }
+    })
+    .catch(error => console.error('Error sending contact data:', error));
+}
+
+
+// Event listener untuk form submission
+document.querySelector('.contact-form form').addEventListener('submit', postContactFormData);
+
+// Panggil fungsi saat halaman dimuat
+document.addEventListener('DOMContentLoaded', fetchHeaderData);
+  </script>
 </html>
