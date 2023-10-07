@@ -99,6 +99,9 @@ header .shopping span{
     grid-template-columns: repeat(2, 1fr);
 
 }
+.card .checkOut a{
+    color: #fff;
+}
 .card .checkOut div{
     background-color: #ae9c52;
     width: 100%;
