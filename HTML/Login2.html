@@ -20,7 +20,7 @@
     <h2>Log in</h2>
     <div class="form-element">
       <label for="email">Username</label>
-      <input type="text" id="username" placeholder="Enter Email" />
+      <input type="text" id="username" placeholder="Enter Username" />
     </div>
     <div class="form-element">
       <label for="password">Password</label>
@@ -41,7 +41,7 @@
   </div>
 </body>
 <script>
-  var email = document.getElementById("email")
+  var username = document.getElementById("username")
   var password = document.getElementById("password")
   var btn = document.getElementById("login")
 
@@ -58,14 +58,17 @@
       })
     })
       .then(function (response) {
-        if (response.ok) {
-          return response.json();
+        return response.json();
+      })
+      .then(function (data) {
+        if (data.message === 'Login berhasil') {
+          window.location.href = "https://kampus-merdeka-software-engineering.github.io/front-end-capstone-project-section-jayapura-group-2/index.html";
+        } else if (data.message === 'Username salah' || data.message === 'Password salah') {
+          alert(data.message);
         }
-        return Promise.reject(response);
-      }).then(function (data) {
-        alert(data.message);
-      }).catch(function (error) {
-        console.log(error);
+      })
+      .catch(function (error) {
+        console.error(error);
       });
   }
 </script>

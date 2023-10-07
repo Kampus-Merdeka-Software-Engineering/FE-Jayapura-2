@@ -49,27 +49,45 @@
   btn.addEventListener("click", signup);
 
   function signup() {
+    const username = document.getElementById("username").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
     fetch("http://localhost:3333/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        username: username.value,
-        email: email.value,
-        password: password.value,
+        username: username,
+        email: email,
+        password: password,
       })
     })
       .then(function (response) {
-        if (response.ok) {
+        if (response.status === 409) {
           return response.json();
         }
-        return Promise.reject(response);
-      }).then(function (data) {
-        alert(data.message);
-      }).catch(function (error) {
-        console.log(error);
+        if (response.status === 201) {
+          return response.json();
+        }
+        else {
+          throw new Error('Server Error');
+        }
+      })
+      .then(function (data) {
+        if (data.message === 'Signup successful') {
+          // Jika signup berhasil, tampilkan pesan sukses
+          alert("Signup berhasil. Silahkan login.");
+        } else if (data.message === 'Username or email already exists') {
+          // Jika username atau email sudah ada, tampilkan pesan kesalahan
+          alert("Username atau email sudah terdaftar. Silahkan login.");
+        }
+      })
+      .catch(function (error) {
+        console.log(error); // Menangani kesalahan jika terjadi kesalahan lain atau server tidak merespons 409
       });
+
   }
 </script>
 
