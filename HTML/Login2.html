@@ -4,18 +4,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet"
-    href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/CSS/Login2.css" />
+  <title>Login</title>
+  <link rel="stylesheet" href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/CSS/Login2.css" />
 </head>
 
 <body>
   <!-- Kotak Login -->
   <div class="form">
     <div class="logo">
-      <img
-        src="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets/logo-batik.png"
-        alt="Logo" />
+      <img src="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets/logo-batik.png" alt="Logo" />
     </div>
     <h2>Log in</h2>
     <div class="form-element">
@@ -60,7 +57,7 @@
       })
       .then(function (data) {
         if (data.message === 'Login berhasil') {
-          window.location.href = "https://kampus-merdeka-software-engineering.github.io/front-end-capstone-project-section-jayapura-group-2/index.html";
+          window.location.href = "https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/index.html";
         } else if (data.message === 'Username salah' || data.message === 'Password salah') {
           alert(data.message);
         }
