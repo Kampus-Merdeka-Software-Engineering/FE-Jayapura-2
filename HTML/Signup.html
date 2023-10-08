@@ -1,37 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Create Account</title>
-    <link rel="stylesheet" href="../CSS/signup.css">
-    <script src="../JS/signup.js"></script>
-  </head>
-  <body>
-    <!-- Kotak Sign Up -->
-    <div class="form">
-      <div class="logo">
-        <img src="../Assets/logo-batik.png" alt="Logo" />
-      </div>
-      <h2>Create Account</h2>
-      <div class="form-element">
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Name" />
-      </div>
-      <div class="form-element">
-        <label for="email">Email</label>
-      <input type="text" id="email" placeholder="Enter Email" />
-      </div>
-      <div class="form-element">
-        <label for="password">Password</label>
-          <input type="password" id="password" placeholder="Enter Password" />
-      </div>
-      <div class="form-element">
-        <button class="signup">Sign Up</button>
-      </div>
-      <div class="form-element">
-        <button class="login" onclick="goToSignUpPage()">Login</button>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Account</title>
+  <link rel="stylesheet"
+    href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/CSS/signup.css">
+  <script
+    src="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/JS/signup.js"></script>
+</head>
+
+<body>
+  <!-- Kotak Sign Up -->
+  <div class="form">
+    <div class="logo">
+      <img
+        src="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets/logo-batik.png"
+        alt="Logo" />
     </div>
-  </body>
+    <h2>Create Account</h2>
+    <div class="form-element">
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Username" />
+    </div>
+    <div class="form-element">
+      <label for="email">Email</label>
+      <input type="text" id="email" placeholder="Enter Email" />
+    </div>
+    <div class="form-element">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter Password" />
+    </div>
+    <div class="form-element">
+      <button class="signup" id="signup">Sign Up</button>
+    </div>
+    <div class="form-element">
+      <button class="login" onclick="goToSignUpPage()">Login</button>
+    </div>
+  </div>
+</body>
+<script>
+  var username = document.getElementById("username");
+  var email = document.getElementById("email");
+  var password = document.getElementById("password");
+  var btn = document.getElementById("signup");
+
+  btn.addEventListener("click", signup);
+
+  function signup() {
+    fetch("http://localhost:3333/signup", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        username: username.value,
+        email: email.value,
+        password: password.value,
+      })
+    })
+      .then(function (response) {
+        if (response.ok) {
+          return response.json();
+        }
+        return Promise.reject(response);
+      }).then(function (data) {
+        alert(data.message);
+      }).catch(function (error) {
+        console.log(error);
+      });
+  }
+</script>
+
 </html>

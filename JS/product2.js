@@ -30,9 +30,9 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelector(".popup .close-btn").addEventListener("click", function () {
         document.querySelector(".popup").classList.remove("active");
     });
-    document.querySelector("#showOverlay").addEventListener("click", function () {
-        document.querySelector(".overlay").classList.add("active");
-    });
+    // document.querySelector("#showOverlay").addEventListener("click", function () {
+    //     document.querySelector(".overlay").classList.add("active");
+    // });
     document.querySelector(".overlay .closeOverlay").addEventListener("click", function () {
         document.querySelector(".overlay").classList.remove("active");
     });
@@ -78,10 +78,10 @@ $(function () {
     : "man";
 
   // if (urlParams.get('category')) {
-  //   getCategory = urlParams.get('category')
-  // }else {
-  //   getCategory = 'man'
-  // }
+  //    getCategory = urlParams.get('category')
+  //  }else {
+  //    getCategory = 'man'
+  //  }
 
   let listContainer = document.querySelector(".container2");
   let list = document.querySelector(".list");
@@ -120,7 +120,7 @@ $(function () {
 
   }
 
-  getProducts();
+  getProducts(productsMan);
   // initApp(productsMan);
   // ga digunakan kalau sudah pakai api
 
