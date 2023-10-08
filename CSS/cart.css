@@ -72,7 +72,8 @@
 	border-radius: 10px;
 	transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 200ms ease-in-out 0ms;
 
-}			
+}	
+
 *{
     margin: 0;
     padding: 0;
@@ -118,6 +119,7 @@ body{
     background-color: #f6f4f3;    
     font-family: allfont;
 }
+
 .cart-page{
     margin: 80px auto;
 }
