@@ -82,7 +82,7 @@ let productsWoman = [
     listImage: [
       '/Assets/Semua Produk/Center Tield Dress 2.jpg',
       '/Assets/Semua Produk/Center Tield Dress 1.jpg',
-      '/Assets/Semua Produk/Center Tield Dress .jpg'
+      '/Assets/Semua Produk/Center Tield Dress.jpg'
     ],
     ukuran: ['S', 'M', 'L', 'XL', 'XXL']
   },
