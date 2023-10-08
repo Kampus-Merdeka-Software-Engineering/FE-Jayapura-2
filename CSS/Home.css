@@ -1727,6 +1727,26 @@ h2 {
     .categories h1 {
       font-size: 25px;
     }
+    .wrapper i {
+      top: 35%;
+      margin-right: 10px;
+      height: 30px;
+      width: 30px;
+      color: #343f4f;
+      cursor: pointer;
+      font-size: 1.15rem;
+      position: absolute;
+      text-align: center;
+      line-height: 4px;
+      background: #fff;
+      border-radius: 50%;
+      transform: translateY(-50%);
+      transition: transform 0.1s linear;
+    }
+    .wrapper i img{
+      margin-top: 3px;
+      width: 15px;
+    }
     /* Contact Us */
     .ContactUs_container {
       margin-left: 30px;
@@ -1872,6 +1892,33 @@ h2 {
       width: calc(100%/3);
       height: 70%;
     }
+    .wrapper i {
+      top: 35%;
+      margin-right: 20px;
+      height: 30px;
+      width: 30px;
+      color: #343f4f;
+      cursor: pointer;
+      font-size: 1.15rem;
+      position: absolute;
+      text-align: center;
+      line-height: 4px;
+      background: #fff;
+      border-radius: 50%;
+      transform: translateY(-50%);
+      transition: transform 0.1s linear;
+    }
+    .wrapper i img{
+      margin-top: 3px;
+      width: 15px;
+    }
+    .wrapper i:first-child {
+      left: -22px;
+      display: none;
+    }
+    .wrapper i:last-child {
+      right: -20px;
+    }
     /* Contact Us */
     .ContactUs_container {
       margin-left: 30px;
@@ -1978,7 +2025,7 @@ h2 {
     }
 }
 
-@media screen and (min-width: 375px) and (max-width: 564px) {
+@media screen and (min-width: 265px) and (max-width: 564px) {
   /* Carousel atas*/
     .home {
       width: 100%;
@@ -1995,11 +2042,11 @@ h2 {
       top: 15px;
     }
     .home .content h1 {
-      font-size: 0.9em;
+      font-size: 18px;
       letter-spacing: 1px;
     }
     .home .content p {
-      font-size: 8px;
+      font-size: 15px;
     }
     .home .content a {
       padding: 10px 30px;
@@ -2007,8 +2054,8 @@ h2 {
     }
     /* Best Seller */
     .carousel img {
-      width: calc(100%/3);
-      height: 70%;
+      width: calc(100%/2);
+      height: 100%;
     }
     .categories {
       width: 100%;
@@ -2016,6 +2063,27 @@ h2 {
     }
     .categories h1 {
       font-size: 20px;
+    }
+    .wrapper i {
+      top: 50%;
+      margin-right: 13px;
+      height: 30px;
+      width: 30px;
+      color: #343f4f;
+      cursor: pointer;
+      font-size: 1.15rem;
+      position: absolute;
+      text-align: center;
+      line-height: 4px;
+      background: #fff;
+      border-radius: 50%;
+      transform: translateY(-50%);
+      transition: transform 0.1s linear;
+    }
+    .wrapper i img{
+      margin-top: 3px;
+      width: 15px;
+    
     }
     /* Contact Us */
     .ContactUs_container {
@@ -2028,19 +2096,30 @@ h2 {
       font-size: 10px;
     }
     .header__content a {
-      padding: 10px 15px;
+      padding: 5px 10px;
     }
     .header__content button {
-      padding: 5px 20px;
-      font-size: 15px;
+      padding: 5px 10px;
+      font-size: 10px;
+    }
+    .header__image {
+      position: relative;
+      margin-bottom: 60px;
     }
     .header__image img {
-      height: auto;
-      max-width: 100%;
+      width: 120%;
+      height: 150%;
+      max-width: 200%;
+      margin-bottom: 60px;
     }
     /* Categories */
     .section_category {
       padding: 1rem 0.5rem;
+    }
+    .categories_grid {
+      display: flex;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
     }
     .section__grid {
       flex-direction: column;
@@ -2048,7 +2127,7 @@ h2 {
       align-items: center; 
     }
     .categories_subtitle {
-      font-size: 25px;
+      font-size: 10px;
     }
     .categories_btn {
       padding: 10px 15px;
@@ -2097,18 +2176,27 @@ h2 {
     .section__title {
       font-size: 19px;
     }
+    .sale__grid{
+      align-items: center;
+      width: 60%;
+      margin-left: 100px;
+      padding: 10px 10px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+  
+    }
     .sale__title {
       font-size: 19px;
     }
     .sale__title span {
-      font-size: 19px;
+      font-size: 15px;
     }
     .sale__subtitle {
-      font-size: 13px;
+      font-size: 10px;
     }
     .sale__btn{
       padding: 6px 11px;
-      font-size: 5px;
+      font-size: 10px;
     }
     /* News Section */
     .news {
@@ -2117,10 +2205,10 @@ h2 {
     align-items: center; 
     }
     .news_details h4 {
-      font-size: 15px;
+      font-size: 12px;
     }
     .news_details p {
-      font-size: 12px;
+      font-size: 10px;
     }
 }
 /* footer */
