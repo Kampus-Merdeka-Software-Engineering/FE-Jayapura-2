@@ -2125,24 +2125,23 @@ h2 {
       font-size: 19px;
     }
     .sale__grid{
-      padding: 50px 10px;
+      padding: 10px 10px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      width: 30%;
-      height: 30%;
+  
     }
     .sale__title {
       font-size: 19px;
     }
     .sale__title span {
-      font-size: 19px;
+      font-size: 15px;
     }
     .sale__subtitle {
-      font-size: 13px;
+      font-size: 10px;
     }
     .sale__btn{
       padding: 6px 11px;
-      font-size: 5px;
+      font-size: 10px;
     }
     /* News Section */
     .news {
