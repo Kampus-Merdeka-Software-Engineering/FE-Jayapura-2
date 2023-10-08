@@ -74,12 +74,12 @@ body {
   border: none;
   cursor: pointer;
 }
-.navbar button img{
-  width: 30px;
+.navbar .navbarbutton img{
+  margin: 0px 20px;
+  width: 30x;
   height: 30px;
-  border: none;
-  
 }
+
 
 /* Animation Button Navigation Bar */
 .navbar .navbarbutton.active,
@@ -1978,7 +1978,7 @@ h2 {
     }
 }
 
-@media screen and (min-width: 393px) and (max-width: 564px) {
+@media screen and (min-width: 375px) and (max-width: 564px) {
   /* Carousel atas*/
     .home {
       width: 100%;
@@ -1995,15 +1995,15 @@ h2 {
       top: 15px;
     }
     .home .content h1 {
-      font-size: 1em;
-      letter-spacing: 1.5px;
+      font-size: 0.9em;
+      letter-spacing: 1px;
     }
     .home .content p {
-      font-size: 15px;
+      font-size: 8px;
     }
     .home .content a {
       padding: 10px 30px;
-      font-size: 0.7em;
+      font-size: 0.5em;
     }
     /* Best Seller */
     .carousel img {
@@ -2019,19 +2019,19 @@ h2 {
     }
     /* Contact Us */
     .ContactUs_container {
-      margin-left: 30px;
+      margin-left: 20px;
     }
     .header__content h1 {
-      font-size: 20px;
-    }
-    .header__content p {
       font-size: 15px;
     }
+    .header__content p {
+      font-size: 10px;
+    }
     .header__content a {
-      padding: 15px 20px;
+      padding: 10px 15px;
     }
     .header__content button {
-      padding: 5px 25px;
+      padding: 5px 20px;
       font-size: 15px;
     }
     .header__image img {
@@ -2123,7 +2123,6 @@ h2 {
       font-size: 12px;
     }
 }
-
 /* footer */
 @media (max-width: 767px) {
   .footer-col {
