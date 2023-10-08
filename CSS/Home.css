@@ -2042,11 +2042,11 @@ h2 {
       top: 15px;
     }
     .home .content h1 {
-      font-size: 0.9em;
+      font-size: 18px;
       letter-spacing: 1px;
     }
     .home .content p {
-      font-size: 8px;
+      font-size: 15px;
     }
     .home .content a {
       padding: 10px 30px;
@@ -2177,9 +2177,12 @@ h2 {
       font-size: 19px;
     }
     .sale__grid{
+      align-items: center;
+      width: 60%;
+      margin-left: 100px;
       padding: 10px 10px;
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
   
     }
     .sale__title {
