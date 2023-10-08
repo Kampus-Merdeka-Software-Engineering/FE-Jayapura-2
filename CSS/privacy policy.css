@@ -441,6 +441,7 @@ section{
     .header .navbarbutton1 {
       display: block;
       margin-right: 20px;
+      margin-bottom: 20px;
     }
     .dropdown-menu {
       display: block;
