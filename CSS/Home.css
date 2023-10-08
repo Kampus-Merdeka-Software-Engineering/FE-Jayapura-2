@@ -74,10 +74,11 @@ body {
   border: none;
   cursor: pointer;
 }
-.navbar .navbarbutton img{
-  align-items: flex-end;
-  width: 25x;
-  height: 25px;
+.navbar button img{
+  width: 30px;
+  height: 30px;
+  margin-bottom: -5px;
+  border: none;
 }
 
 
@@ -1666,8 +1667,9 @@ h2 {
     display: none;
   }
   .header .navbarbutton1 {
-    display: block;
+    display:block;
     margin-right: 20px;
+    margin-bottom: 20px;
   }
   .dropdown-menu {
     display: block;
