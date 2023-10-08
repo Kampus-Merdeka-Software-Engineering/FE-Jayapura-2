@@ -100,8 +100,8 @@ $(function () {
             <img id="klik" src="../Assets/${
               value.image
             }" onclick="popup('${escapeHtml(JSON.stringify(value))}')">
-            <div class="title">${value.nama}</div>
-            <div class="price">${value.harga.toLocaleString()}</div>`;
+            <div class="title">${value.name}</div>
+            <div class="price">${value.price.toLocaleString()}</div>`;
       list.appendChild(newDiv);
     });
   }
@@ -110,7 +110,7 @@ $(function () {
   //const products = getCategory === 'man' ? productsMan : productsWoman
 
   function getProducts() { 
-    fetch("http://localhost:3333/products")
+    fetch("http://localhost:3333/products?category=Man")
           .then(res => res.json())     
           .then(function(data){
             console.log(data);

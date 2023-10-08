@@ -30,7 +30,9 @@
         <a href="../HTML/product.html" class="navbarbutton">Product</a>
         <a href="../HTML/AboutUs.html" class="navbarbutton">About Us</a>
         <a href="../HTML/Contact.html" class="navbarbutton">Contact</a>
-        <button id="show-login" class="navbarbutton"><img src="../Assets/cart-shopping-solid.svg" alt="" /></button>
+        <button id="show-login" class="navbarbutton">
+          <img src="../Assets/cart-shopping-solid.svg" alt="" />
+        </button>
         <button class="navbarbutton1">
           <img src="../Assets/bars-solid.svg" alt="" />
         </button>
@@ -147,48 +149,59 @@
         </div>
         <div class="popup-checkout">
           <div class="sizeOverlay">
-            <div class="radio-container">
-              <label for="sizeOverlay"
-                >Ukuran &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</label
-              >
-              <label class="custom-radio">
-                <input type="radio" name="size" value="S" />
-                <span class="radio-label">S</span>
-              </label>
-              <label class="custom-radio">
-                <input type="radio" name="size" value="M" />
-                <span class="radio-label">M</span>
-              </label>
-              <label class="custom-radio">
-                <input type="radio" name="size" value="L" />
-                <span class="radio-label">L</span>
-              </label>
-              <label class="custom-radio">
-                <input type="radio" name="size" value="XL" />
-                <span class="radio-label">XL</span>
-              </label>
-              <label class="custom-radio">
-                <input type="radio" name="size" value="XXL" />
-                <span class="radio-label">XXL</span>
-              </label>
-              <div class="quantity-container">
-                <label for="quantity">Kuantitas &nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <button id="quantity-decrease-btn" onclick="decreaseQuantity()">
-                  -
-                </button>
-                <input
-                  type="text"
-                  id="quantity"
-                  name="quantity"
-                  min="1"
-                  value="1"
-                />
-                <button id="quantity-increase-btn" onclick="increaseQuantity()">
-                  +
-                </button>
+            <form id="formcart">
+              <div class="radio-container">
+                <label for="sizeOverlay"
+                  >Ukuran &nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;</label
+                >
+                <label class="custom-radio">
+                  <input type="radio" name="size" value="S" />
+                  <span class="radio-label">S</span>
+                </label>
+                <label class="custom-radio">
+                  <input type="radio" name="size" value="M" />
+                  <span class="radio-label">M</span>
+                </label>
+                <label class="custom-radio">
+                  <input type="radio" name="size" value="L" />
+                  <span class="radio-label">L</span>
+                </label>
+                <label class="custom-radio">
+                  <input type="radio" name="size" value="XL" />
+                  <span class="radio-label">XL</span>
+                </label>
+                <label class="custom-radio">
+                  <input type="radio" name="size" value="XXL" />
+                  <span class="radio-label">XXL</span>
+                </label>
+                <div class="quantity-container">
+                  <label for="quantity"
+                    >Kuantitas &nbsp;&nbsp;&nbsp;&nbsp;</label
+                  >
+                  <button
+                    id="quantity-decrease-btn"
+                    onclick="decreaseQuantity()"
+                  >
+                    -
+                  </button>
+                  <input
+                    type="text"
+                    id="quantity"
+                    name="quantity"
+                    min="1"
+                    value="1"
+                  />
+                  <button
+                    id="quantity-increase-btn"
+                    onclick="increaseQuantity()"
+                  >
+                    +
+                  </button>
+                </div>
+                <button class="checkout" type="submit">Add to Cart</button>
               </div>
-              <button class="checkout">Add to Cart</button>
-            </div>
+            </form>
           </div>
         </div>
       </section>
@@ -219,7 +232,9 @@
           <div class="footer-col">
             <h4>Product Categories</h4>
             <ul>
-              <li><a href="../product2.html?category=man">Man Collection</a></li>
+              <li>
+                <a href="../product2.html?category=man">Man Collection</a>
+              </li>
               <li>
                 <a href="../product2.html?category=woman">Woman Collection</a>
               </li>
@@ -229,7 +244,9 @@
             <h4>Useful Links</h4>
             <ul>
               <li><a href="../HTML/privacy policy.html">Privacy Policy</a></li>
-              <li><a href="../HTML/TermsofService.html">Terms & Conditions</a></li>
+              <li>
+                <a href="../HTML/TermsofService.html">Terms & Conditions</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -242,4 +259,19 @@
       </div>
     </footer>
   </body>
+  <script>
+
+    function print(event){
+      event.preventDefault();
+      console.log("test");
+      // Ambil data dari form
+      // const formBox = document.querySelector('.formbox');
+      const form = event.target;
+
+      const size = form.querySelector('[name="size"]:checked').value;
+      console.log(size);
+    }
+    document
+      .querySelector("#formcart").addEventListener("submit", print);
+  </script>
 </html>
