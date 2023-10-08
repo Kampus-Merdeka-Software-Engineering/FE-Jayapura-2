@@ -2128,7 +2128,7 @@ h2 {
       padding: 50px 10px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      width: %;
+      width: 30%;
       height: 30%;
     }
     .sale__title {
