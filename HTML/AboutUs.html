@@ -1,200 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About Us</title>
-    <link rel="stylesheet" href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/CSS/about.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/JS/AboutUs.js"></script>
-  </head>
-  <body>
-    <!-- All Navigation Bar -->
-    <header class="header">
-      <!-- Gambar Logo -->
-      <img src="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets/Logo1.svg" alt="" class="logo" />
-      <img src="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets/logo-batik.png" alt="" class="logo1" />
-      <!-- Navigation Button -->
-      <nav class="navbar">
-        <a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/index.html" class="navbarbutton">Home</a>
-        <a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/HTML/product2.html" class="navbarbutton">Product</a>
-        <a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/HTML/AboutUs.html" class="navbarbutton">About Us</a>
-        <a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/HTML/Contact.html" class="navbarbutton">Contact</a>
-        <button style="border: none;">
-        <a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/HTML/Login2.html" class="navbarbutton">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us</title>
+  <link rel="stylesheet" href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/CSS/about.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/JS/AboutUs.js"></script>
+  <script src="../JS/session.js"></script>
+</head>
+
+<body>
+  <!-- All Navigation Bar -->
+  <header class="header">
+    <!-- Gambar Logo -->
+    <img src="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets/Logo1.svg" alt=""
+      class="logo" />
+    <img src="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets/logo-batik.png" alt=""
+      class="logo1" />
+    <!-- Navigation Button -->
+    <nav class="navbar">
+      <a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/index.html"
+        class="navbarbutton">Home</a>
+      <a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/HTML/product2.html"
+        class="navbarbutton">Product</a>
+      <a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/HTML/AboutUs.html"
+        class="navbarbutton">About Us</a>
+      <a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/HTML/Contact.html"
+        class="navbarbutton">Contact</a>
+      <button style="border: none;">
+        <a href="#" id="about-us-link" class="navbarbutton">
           <img src="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets/cart-shopping-solid.svg">
         </a>
-        </button>
-        <button style="border: none;" class="navbarbutton1">
-          <img src="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets/bars-solid.svg" alt=""/>
-        </button>
-      </nav>
-    </header>
-    <!-- Drop Down Menu -->
-    <div class="dropdown-menu">
-      <a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/index.html" class="navbarbutton">Home</a>
-      <a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/HTML/product2.html" class="navbarbutton">Product</a>
-      <a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/HTML/AboutUs.html" class="navbarbutton">About Us</a>
-      <a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/HTML/Contact.html" class="navbarbutton">Contact</a>
-      <a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/HTML/Login2.html" class="navbarbutton">Cart</a>
-    </div>
-    <!-- Login Pop Up Method -->
-    <div class="popup">
-      <div class="close-btn">&times;</div>
-      <div class="form">
-        <h2>Log in</h2>
-        <div class="form-element">
-          <label for="email">Email</label>
-          <input type="text" id="email" placeholder="Enter Email" />
-        </div>
-        <div class="form-element">
-          <label for="password">Password</label>
-          <input type="password" id="password" placeholder="Enter Password" />
-        </div>
-        <div class="form-element">
-          <input type="checkbox" id="remember-me" />
-          <label for="remember-me">Remember me</label>
-        </div>
-        <div class="form-element">
-          <button>Sign in</button>
-        </div>
-        <div class="form-element">
-          <a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/HTML/Signup.html" target="_blank">Create Account ?</a>
-          <p>or</p>
-          <a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/HTML/Resetpass.html" target="_blank">Forgot Password</a>
-        </div>
+      </button>
+      <button style="border: none;" class="navbarbutton1">
+        <img src="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets/bars-solid.svg" alt="" />
+      </button>
+    </nav>
+  </header>
+  <!-- Drop Down Menu -->
+  <div class="dropdown-menu">
+    <a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/index.html"
+      class="navbarbutton">Home</a>
+    <a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/HTML/product2.html"
+      class="navbarbutton">Product</a>
+    <a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/HTML/AboutUs.html"
+      class="navbarbutton">About Us</a>
+    <a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/HTML/Contact.html"
+      class="navbarbutton">Contact</a>
+    <a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/HTML/Login2.html"
+      class="navbarbutton">Cart</a>
+  </div>
+  <!-- Login Pop Up Method -->
+  <div class="popup">
+    <div class="close-btn">&times;</div>
+    <div class="form">
+      <h2>Log in</h2>
+      <div class="form-element">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Enter Email" />
+      </div>
+      <div class="form-element">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter Password" />
+      </div>
+      <div class="form-element">
+        <input type="checkbox" id="remember-me" />
+        <label for="remember-me">Remember me</label>
+      </div>
+      <div class="form-element">
+        <button>Sign in</button>
+      </div>
+      <div class="form-element">
+        <a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/HTML/Signup.html"
+          target="_blank">Create Account ?</a>
+        <p>or</p>
+        <a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/HTML/Resetpass.html"
+          target="_blank">Forgot Password</a>
       </div>
     </div>
-    <!-- All Content -->
-    <section class="hero">
-      <div id="AboutUS" class="heading">
-        <h1>About Us</h1>
+  </div>
+  <!-- All Content -->
+  <section class="hero">
+    <div id="AboutUS" class="heading">
+      <h1>About Us</h1>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <h2>Nuansa Batik</h2>
+        <p>
+          We are a company specializing in the production and sale of
+          high-quality batik clothing. With a deep appreciation for
+          Indonesia's cultural beauty and traditions. We are committed to
+          promoting Indonesia's cultural heritage through our batik clothing.
+          Every time you choose our products, you are supporting the
+          preservation of traditions and adding value to local artisans. Thank
+          you for your support. Join us on our journey to elevate the beauty
+          of Indonesian batik to a global level.
+        </p>
+        <a href="">Go Shopping</a>
       </div>
-      <div class="container">
-        <div class="hero-content">
-          <h2>Nuansa Batik</h2>
+      <div class="hero-image">
+        <img src="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets/Gambar2.jpg"
+          class="responsive" width="600" height="400" />
+      </div>
+    </div>
+  </section>
+  <section class="hero2">
+    <div class="container2">
+      <div class="hero2-content">
+        <h2>Background</h2>
+        <p>
+          Since our inception, we have grown to become a leader in the batik
+          fashion industry, driven by a strong vision to serve as a bridge
+          between Indonesia's cultural beauty and global fashion trends. We
+          recognize that batik represents more than just vibrant fabric; it
+          embodies a cultural heritage passed down through generations,
+          celebrating the diversity and richness of Indonesia's history. This
+          deep understanding fuels our commitment to preserving the cultural
+          and artistic essence in each of our creations.
+        </p>
+      </div>
+      <div class="hero2-image">
+        <img src="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets/Gambar.jpg"
+          class="responsive" width="600" height="400" />
+      </div>
+    </div>
+  </section>
+  <section class="hero3">
+    <div class="container3">
+      <h1>Other Information About Us</h1>
+      <div class="sub-container">
+        <div class="icon">
+          <img src="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets/clock-regular.svg"
+            alt="" />
+          <h2>Working Hours</h2>
           <p>
-            We are a company specializing in the production and sale of
-            high-quality batik clothing. With a deep appreciation for
-            Indonesia's cultural beauty and traditions. We are committed to
-            promoting Indonesia's cultural heritage through our batik clothing.
-            Every time you choose our products, you are supporting the
-            preservation of traditions and adding value to local artisans. Thank
-            you for your support. Join us on our journey to elevate the beauty
-            of Indonesian batik to a global level.
+            Monday-Friday: 09:00 AM - 06:00 PM <br />Saturday: 09:00 AM -
+            01:00 PM <br />We are also available online 24/7 through our
+            website for orders and inquiries. We strive to provide the best
+            service to our customers within the hours that suit your needs.
           </p>
-          <a href="">Go Shopping</a>
         </div>
-        <div class="hero-image">
-          <img src="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets/Gambar2.jpg" class="responsive" width="600" height="400"/>
-        </div>
-      </div>
-    </section>
-    <section class="hero2">
-      <div class="container2">
-        <div class="hero2-content">
-          <h2>Background</h2>
+        <div class="icon">
+          <img src="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets/recycle-solid.svg"
+            alt="" />
+          <h2>Sustainability</h2>
           <p>
-            Since our inception, we have grown to become a leader in the batik
-            fashion industry, driven by a strong vision to serve as a bridge
-            between Indonesia's cultural beauty and global fashion trends. We
-            recognize that batik represents more than just vibrant fabric; it
-            embodies a cultural heritage passed down through generations,
-            celebrating the diversity and richness of Indonesia's history. This
-            deep understanding fuels our commitment to preserving the cultural
-            and artistic essence in each of our creations.
+            Nuansa Batik transcends mere fashion it's a commitment to
+            sustainability and community. We prioritize eco-friendly materials
+            and ethical production practices to minimize our environmental
+            impact.
           </p>
         </div>
-        <div class="hero2-image">
-          <img src="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets/Gambar.jpg" class="responsive" width="600" height="400"/>
+        <div class="icon">
+          <img src="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets/star-regular.svg"
+            alt="" />
+          <h2>Distinctive Batik Excellence</h2>
+          <p>
+            Distinctive Batik Excellence: We stand out due to our unwavering
+            commitment to crafting high-quality batik clothing. Our artisans,
+            well-versed in traditional batik techniques, meticulously fashion
+            each piece, marrying heritage with contemporary flair.
+          </p>
         </div>
       </div>
-    </section>
-    <section class="hero3">
-      <div class="container3">
-        <h1>Other Information About Us</h1>
-        <div class="sub-container">
-          <div class="icon">
-            <img src="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets/clock-regular.svg" alt="" />
-            <h2>Working Hours</h2>
-            <p>
-              Monday-Friday: 09:00 AM - 06:00 PM <br />Saturday: 09:00 AM -
-              01:00 PM <br />We are also available online 24/7 through our
-              website for orders and inquiries. We strive to provide the best
-              service to our customers within the hours that suit your needs.
-            </p>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="footer">
+      <!-- footer -->
+      <div class="row">
+        <div class="footer-col">
+          <img src="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets/LogoNuansa.svg" alt="" />
+          <div class="social-links">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
           </div>
-          <div class="icon">
-            <img src="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets/recycle-solid.svg" alt="" />
-            <h2>Sustainability</h2>
-            <p>
-              Nuansa Batik transcends mere fashion it's a commitment to
-              sustainability and community. We prioritize eco-friendly materials
-              and ethical production practices to minimize our environmental
-              impact.
-            </p>
-          </div>
-          <div class="icon">
-            <img src="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets/star-regular.svg" alt="" />
-            <h2>Distinctive Batik Excellence</h2>
-            <p>
-              Distinctive Batik Excellence: We stand out due to our unwavering
-              commitment to crafting high-quality batik clothing. Our artisans,
-              well-versed in traditional batik techniques, meticulously fashion
-              each piece, marrying heritage with contemporary flair.
-            </p>
-          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Company & Store</h4>
+          <ul>
+            <p>Jl. Batik Indah No. 123</p>
+            <p>Batikland, Indonesia, 12345</p>
+            <p>Mobile : +62 123 4567 8901</p>
+            <p>Tel : +62 123 4567 8902</p>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Product Categories</h4>
+          <ul>
+            <li><a href="#">Man Collection</a></li>
+            <li><a href="#">Woman Collection</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a
+                href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/HTML/privacy policy.html">Privacy
+                Policy</a></li>
+            <li><a
+                href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/HTML/TermsofService.html">Terms
+                of Service</a></li>
+          </ul>
         </div>
       </div>
-    </section>
-    <!-- Footer -->
-    <footer>
-      <div class="footer">
-        <!-- footer -->
-        <div class="row">
-          <div class="footer-col">
-            <img src="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets/LogoNuansa.svg" alt="" />
-            <div class="social-links">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-instagram"></i></a>
-            </div>
-          </div>
-          <div class="footer-col">
-            <h4>Company & Store</h4>
-            <ul>
-              <p>Jl. Batik Indah No. 123</p>
-              <p>Batikland, Indonesia, 12345</p>
-              <p>Mobile : +62 123 4567 8901</p>
-              <p>Tel : +62 123 4567 8902</p>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Product Categories</h4>
-            <ul>
-              <li><a href="#">Man Collection</a></li>
-              <li><a href="#">Woman Collection</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/HTML/privacy policy.html">Privacy Policy</a></li>
-              <li><a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/HTML/TermsofService.html">Terms of Service</a></li>
-            </ul>
-          </div>
-        </div>
-        <br />
-        <br />
-        <div class="footer-bottom">
-          <hr />
-          <p>Copyright &copy; Nuansa Batik 2023</p>
-        </div>
+      <br />
+      <br />
+      <div class="footer-bottom">
+        <hr />
+        <p>Copyright &copy; Nuansa Batik 2023</p>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
