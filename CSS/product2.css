@@ -830,8 +830,19 @@ main {
 
 @media screen and (min-width: 769px) and (max-width: 1278px) {
   .nav.judul {
+    background-image: url("../Assets/Semua Produk/batik judul.jpg");
     background-size: contain;
-    font-size: 25px;
+  }
+  .nav.judul.h1{
+    font-size: 10px;
+}
+
+.describe {
+  text-align: justify;
+  font-family: "font-desc-foot";
+  font-size: 20px;
+  margin: 20px;
+  padding: 20px;
 }
   .container2 {
     width: 770px;
@@ -857,12 +868,25 @@ main {
     padding: 10px;
     margin-inline: 0px;
   }
-
-  
+  .overlay.active {
+    width: 86%;
+  }
 
 }
 
 @media screen and (min-width: 565px) and (max-width: 768px) {
+  .nav.judul {
+    background-image: url("../Assets/Semua Produk/batik judul.jpg");
+    background-size: contain;
+    font-size: 25px;
+}
+.describe {
+  text-align: justify;
+  font-family: "font-desc-foot";
+  font-size: 20px;
+  margin: 20px;
+  padding: 20px;
+}
   .container2 {
     width: 565px;
     margin: auto;
@@ -882,6 +906,13 @@ main {
     height: 237px;
     object-fit: cover;
 }
+}
+@media screen and (min-width: 265px) and (max-width: 564px) {
+  .nav.judul {
+    background-image: url("../Assets/Semua Produk/batik judul.jpg");
+    background-size: contain;
+    font-size: 25px;
+} 
 }
 
 /* footer */
