@@ -247,8 +247,10 @@ body {
 
 nav.judul {
   background-image: url("../Assets/Semua Produk/batik judul.jpg");
-  background-size: 100rem;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   grid-area: nav;
   border-radius: var(--main-radius);
   padding: 15rem;
@@ -830,11 +832,8 @@ main {
 
 @media screen and (min-width: 769px) and (max-width: 1278px) {
   .nav.judul {
-    background-image: url("../Assets/Semua Produk/batik judul.jpg");
-    background-size: contain;
-  }
-  .nav.judul.h1{
     font-size: 10px;
+    height: 50%;
 }
 
 .describe {
