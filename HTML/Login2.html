@@ -40,6 +40,8 @@
   var password = document.getElementById("password")
   var btn = document.getElementById("login")
 
+  console.log('Script is running.');
+
   btn.addEventListener("click", signin);
   function signin() {
     fetch("http://localhost:3333/login", {
