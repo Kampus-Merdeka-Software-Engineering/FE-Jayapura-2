@@ -1,431 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nuansa Batik</title>
-    <link rel="stylesheet" href="./CSS/Home.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="./JS/Home.js"></script>
-    <script src="./JS/script.js" defer></script>
-  </head>
 
-  <body>
-    <!-- All Navigation Bar -->
-    <header class="header">
-      <!-- Gambar Logo -->
-      <img src="./Assets/Logo1.svg" alt="" class="logo" />
-      <img src="./Assets/logo-batik.png" alt="" class="logo1" />
-      <!-- Navigation Button -->
-      <nav class="navbar">
-        <a href="./index.html" class="navbarbutton">Home</a>
-        <a href="./HTML/product2.html" class="navbarbutton">Product</a>
-        <a href="./HTML/AboutUs.html" class="navbarbutton">About Us</a>
-        <a href="./HTML/Contact.html" class="navbarbutton">Contact</a>
-        <button style="border: none;">
-          <a href="./HTML/Login2.html" class="navbarbutton">
-            <img src="./Assets/cart-shopping-solid.svg">
-          </a>
-        </button>
-        <button style="border: none;" class="navbarbutton1">
-          <img src="./Assets/bars-solid.svg" alt=""/>
-        </button>
-      </nav>
-    </header>
-    <!-- Drop Down Menu -->
-    <div class="dropdown-menu">
-      <a href="./HTML/Home.html" class="navbarbutton">Home</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuansa Batik</title>
+  <link rel="stylesheet" href="./CSS/Home.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="./JS/Home.js"></script>
+  <script src="./JS/script.js" defer></script>
+  <script src="./JS/session.js"></script>
+</head>
+
+<body>
+  <!-- All Navigation Bar -->
+  <header class="header">
+    <!-- Gambar Logo -->
+    <img src="./Assets/Logo1.svg" alt="" class="logo" />
+    <img src="./Assets/logo-batik.png" alt="" class="logo1" />
+    <!-- Navigation Button -->
+    <nav class="navbar">
+      <a href="./index.html" class="navbarbutton">Home</a>
       <a href="./HTML/product2.html" class="navbarbutton">Product</a>
       <a href="./HTML/AboutUs.html" class="navbarbutton">About Us</a>
       <a href="./HTML/Contact.html" class="navbarbutton">Contact</a>
-      <a href="./HTML/Login2.html" class="navbarbutton">Login</a>
-    </div>
-    <!-- Login Pop Up Method -->
-    <div class="popup">
-      <div class="close-btn">&times;</div>
-      <div class="form">
-        <h2>Log in</h2>
-        <div class="form-element">
-          <label for="email">Email</label>
-          <input type="text" id="email" placeholder="Enter Email" />
-        </div>
-        <div class="form-element">
-          <label for="password">Password</label>
-          <input type="password" id="password" placeholder="Enter Password" />
-        </div>
-        <div class="form-element">
-          <input type="checkbox" id="remember-me" />
-          <label for="remember-me">Remember me</label>
-        </div>
-        <div class="form-element">
-          <button>Sign in</button>
-        </div>
-        <div class="form-element">
-          <a href="./HTML/Signup.html" target="_blank">Create Account ?</a>
-          <p>or</p>
-          <a href="./HTML/Resetpass.html" target="_blank">Forgot Password</a>
-        </div>
+      <button style="border: none;">
+        <a href="#" id="cart-link" class="navbarbutton">
+          <img src="./Assets/cart-shopping-solid.svg">
+        </a>
+      </button>
+      <button style="border: none;" class="navbarbutton1">
+        <img src="./Assets/bars-solid.svg" alt="" />
+      </button>
+    </nav>
+  </header>
+  <!-- Drop Down Menu -->
+  <div class="dropdown-menu">
+    <a href="./HTML/Home.html" class="navbarbutton">Home</a>
+    <a href="./HTML/product2.html" class="navbarbutton">Product</a>
+    <a href="./HTML/AboutUs.html" class="navbarbutton">About Us</a>
+    <a href="./HTML/Contact.html" class="navbarbutton">Contact</a>
+    <a href="./HTML/Login2.html" class="navbarbutton">Login</a>
+  </div>
+  <!-- Login Pop Up Method -->
+  <div class="popup">
+    <div class="close-btn">&times;</div>
+    <div class="form">
+      <h2>Log in</h2>
+      <div class="form-element">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Enter Email" />
+      </div>
+      <div class="form-element">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter Password" />
+      </div>
+      <div class="form-element">
+        <input type="checkbox" id="remember-me" />
+        <label for="remember-me">Remember me</label>
+      </div>
+      <div class="form-element">
+        <button>Sign in</button>
+      </div>
+      <div class="form-element">
+        <a href="./HTML/Signup.html" target="_blank">Create Account ?</a>
+        <p>or</p>
+        <a href="./HTML/Resetpass.html" target="_blank">Forgot Password</a>
       </div>
     </div>
-    <!-- Carousel -->
-    <section class="home">
-      <div class="slide">
-        <img
-          class="img-slide active"
-          data-slide="0"
-          src="./Assets/b1.jpg"
-          alt="Image 1"
-        />
-        <div class="content" data-slide="0">
-          <h1>
-            WELCOME TO :<br />
-            <span>BIGGEST BATIK COMERCE IN Indonesia</span>
-          </h1>
-          <p>
-            Immerse yourself in the rich cultural heritage of Indonesia through
-            our exquisite batik collection. Batik is more than just
-            clothing; it's a work of art that reflects our culture and
-            history. Explore the intricate patterns and vibrant colors that have
-            been passed down through generations. Let the spirit of
-            Indonesian craftsmanship adorn your life.
-          </p>
-          <a href="./HTML/Carousel.html">Shop Now</a>
-        </div>
+  </div>
+  <!-- Carousel -->
+  <section class="home">
+    <div class="slide">
+      <img class="img-slide active" data-slide="0" src="./Assets/b1.jpg" alt="Image 1" />
+      <div class="content" data-slide="0">
+        <h1>
+          WELCOME TO :<br />
+          <span>BIGGEST BATIK COMERCE IN Indonesia</span>
+        </h1>
+        <p>
+          Immerse yourself in the rich cultural heritage of Indonesia through
+          our exquisite batik collection. Batik is more than just
+          clothing; it's a work of art that reflects our culture and
+          history. Explore the intricate patterns and vibrant colors that have
+          been passed down through generations. Let the spirit of
+          Indonesian craftsmanship adorn your life.
+        </p>
+        <a href="./HTML/Carousel.html">Shop Now</a>
       </div>
-      <div class="slide">
-        <img
-          class="img-slide"
-          data-slide="1"
-          src="./Assets/a93.jpg"
-          alt="Image 2"
-        />
-        <div class="content" data-slide="1">
-          <h1>
-            Batik Elegance:<br />
-            <span>A Symphony of Preservation</span>
-          </h1>
-          <p>
-            Celebrate the beauty of Batik preservation, where each stitch and
-            dye embodies Indonesian artistry. Join us in safeguarding this
-            cultural gem. By wearing batik, you become a part of the
-            ongoing story of our heritage. Let's preserve the threads of
-            tradition together, creating a tapestry of cultural continuity.
-          </p>
-          <a href="./HTML/Carousel1.html">Read More</a>
-        </div>
+    </div>
+    <div class="slide">
+      <img class="img-slide" data-slide="1" src="./Assets/a93.jpg" alt="Image 2" />
+      <div class="content" data-slide="1">
+        <h1>
+          Batik Elegance:<br />
+          <span>A Symphony of Preservation</span>
+        </h1>
+        <p>
+          Celebrate the beauty of Batik preservation, where each stitch and
+          dye embodies Indonesian artistry. Join us in safeguarding this
+          cultural gem. By wearing batik, you become a part of the
+          ongoing story of our heritage. Let's preserve the threads of
+          tradition together, creating a tapestry of cultural continuity.
+        </p>
+        <a href="./HTML/Carousel1.html">Read More</a>
       </div>
-      <div class="slide">
-        <img
-          class="img-slide"
-          data-slide="2"
-          src="./Assets/a1.jpg"
-          alt="Image 3"
-        />
-        <div class="content" data-slide="2">
-          <h1>
-            Heritage<br />
-            <span>in Fashion</span>
-          </h1>
-          <p>
-            Celebrate the heritage of batik fashion with our contemporary and
-            traditional pieces. Whether you're looking for a modern twist
-            on tradition or a timeless classic, our collection offers a
-            wide range of options to suit your style. Embrace the fusion of
-            culture and fashion, and make a statement with each piece you
-            wear.
-          </p>
-          <a href="./HTML/Carousel2.html">Read More</a>
-        </div>
+    </div>
+    <div class="slide">
+      <img class="img-slide" data-slide="2" src="./Assets/a1.jpg" alt="Image 3" />
+      <div class="content" data-slide="2">
+        <h1>
+          Heritage<br />
+          <span>in Fashion</span>
+        </h1>
+        <p>
+          Celebrate the heritage of batik fashion with our contemporary and
+          traditional pieces. Whether you're looking for a modern twist
+          on tradition or a timeless classic, our collection offers a
+          wide range of options to suit your style. Embrace the fusion of
+          culture and fashion, and make a statement with each piece you
+          wear.
+        </p>
+        <a href="./HTML/Carousel2.html">Read More</a>
       </div>
-      <div class="slide">
-        <img
-          class="img-slide"
-          data-slide="3"
-          src="./Assets/a2.jpg"
-          alt="Image 4"
-        />
+    </div>
+    <div class="slide">
+      <img class="img-slide" data-slide="3" src="./Assets/a2.jpg" alt="Image 4" />
 
-        <div class="content" data-slide="3">
-          <h1>
-            Explore<br />
-            <span>Indonesian Batik Elegance</span>
-          </h1>
-          <p>
-            Explore the beauty and history of Indonesian Batik through our exquisite collection. Each piece tells a unique story of tradition and artistry.Join us on a journey to uncover the intricate details and cultural significance of batik. Let the tapestry of Indonesian heritage unfold before your eyes, connecting you to our rich past.
-          </p>
-          <a href="./HTML/Carousel3.html">Read More</a>
-        </div>
+      <div class="content" data-slide="3">
+        <h1>
+          Explore<br />
+          <span>Indonesian Batik Elegance</span>
+        </h1>
+        <p>
+          Explore the beauty and history of Indonesian Batik through our exquisite collection. Each piece tells a unique
+          story of tradition and artistry.Join us on a journey to uncover the intricate details and cultural
+          significance of batik. Let the tapestry of Indonesian heritage unfold before your eyes, connecting you to our
+          rich past.
+        </p>
+        <a href="./HTML/Carousel3.html">Read More</a>
       </div>
+    </div>
 
-      <div class="slider-navigation">
-        <div class="nav-btn active" id="nav-0"></div>
-        <div class="nav-btn" id="nav-1"></div>
-        <div class="nav-btn" id="nav-2"></div>
-        <div class="nav-btn" id="nav-3"></div>
+    <div class="slider-navigation">
+      <div class="nav-btn active" id="nav-0"></div>
+      <div class="nav-btn" id="nav-1"></div>
+      <div class="nav-btn" id="nav-2"></div>
+      <div class="nav-btn" id="nav-3"></div>
+    </div>
+  </section>
+  <!-- Best Seller Section -->
+  <section class="categories">
+    <h1>Our Best Seller</h1>
+    <div class="wrapper">
+      <i id="left"><img src="./Assets/angle-left-solid.svg"></i>
+      <div class="carousel">
+        <img src="./Assets/Semua Produk/Batik Puring Shirt .jpg" alt="img" draggable="false" />
+        <img src="./Assets/Semua Produk/Pitaloka Tunic .jpg" alt="img" draggable="false" />
+        <img src="./Assets/Semua Produk/Center Tield Dress 2.jpg" alt="img" draggable="false" />
+        <img src="./Assets/Semua Produk/Palastri Tunic .jpg" alt="img" draggable="false" />
+        <img src="./Assets/Semua Produk/monaliza skirt1.jpg" alt="img" draggable="false" />
+        <img src="./Assets/Semua Produk/Kemala Tunic .jpg" alt="img" draggable="false" />
+        <img src="./Assets/Batik Pria/Sunshine Elegnace Batik Shirt 1.jpg" alt="img" draggable="false" />
       </div>
-    </section>
-    <!-- Best Seller Section -->
-    <section class="categories">
-      <h1>Our Best Seller</h1>
-      <div class="wrapper">
-        <i id="left"><img src="./Assets/angle-left-solid.svg"></i>
-        <div class="carousel">
-          <img
-            src="./Assets/Semua Produk/Batik Puring Shirt .jpg"
-            alt="img"
-            draggable="false"
-          />
-          <img
-            src="./Assets/Semua Produk/Pitaloka Tunic .jpg"
-            alt="img"
-            draggable="false"
-          />
-          <img
-            src="./Assets/Semua Produk/Center Tield Dress 2.jpg"
-            alt="img"
-            draggable="false"
-          />
-          <img
-            src="./Assets/Semua Produk/Palastri Tunic .jpg"
-            alt="img"
-            draggable="false"
-          />
-          <img
-            src="./Assets/Semua Produk/monaliza skirt1.jpg"
-            alt="img"
-            draggable="false"
-          />
-          <img
-            src="./Assets/Semua Produk/Kemala Tunic .jpg"
-            alt="img"
-            draggable="false"
-          />
-          <img
-            src="./Assets/Batik Pria/Sunshine Elegnace Batik Shirt 1.jpg"
-            alt="img"
-            draggable="false"
-          />
-        </div>
-        <i id="right"><img src="./Assets/angle-right-solid.svg"> </i>
+      <i id="right"><img src="./Assets/angle-right-solid.svg"> </i>
+    </div>
+  </section>
+  <!-- Contact US Section -->
+  <section class="ContactUs">
+    <div class="ContactUs_container header__container">
+      <div class="header__content">
+        <h1>Discover & Shopping<br />Without Worry</h1>
+        <p>
+          If you found any problems, questions or complain product feel free
+          to contact us
+        </p>
+        <button class="product-btn">
+          <a href="Contact.html">Contact Us</a>
+        </button>
       </div>
-    </section>
-    <!-- Contact US Section -->
-    <section class="ContactUs">
-      <div class="ContactUs_container header__container">
-        <div class="header__content">
-          <h1>Discover & Shopping<br />Without Worry</h1>
-          <p>
-            If you found any problems, questions or complain product feel free
-            to contact us
-          </p>
-          <button class="product-btn">
-            <a href="Contact.html">Contact Us</a>
-          </button>
-        </div>
-        <div class="header__image">
-          <img src="./Assets/Semua Produk/Delima DressOrange.png" alt="header" />
+      <div class="header__image">
+        <img src="./Assets/Semua Produk/Delima DressOrange.png" alt="header" />
+      </div>
+    </div>
+  </section>
+  <!-- Our Categories Section -->
+  <section class="section_category categories_container">
+    <h2 class="categories_title">Our Categories</h2>
+    <div class="categories_grid">
+      <div class="categories_card">
+        <img src="./Assets/Batik Pria/Lanange Silver Mist Shirt.jpg" alt="MAN COLLECTION" />
+        <div class="categories_content">
+          <p class="categories_subtitle">MAN COLLECTION</p>
+          <button class="btn categories_btn">VIEW MORE</button>
         </div>
       </div>
-    </section>
-    <!-- Our Categories Section -->
-    <section class="section_category categories_container">
-      <h2 class="categories_title">Our Categories</h2>
-      <div class="categories_grid">
-        <div class="categories_card">
-          <img src="./Assets/Batik Pria/Lanange Silver Mist Shirt.jpg" alt="MAN COLLECTION"/>
-          <div class="categories_content">
-            <p class="categories_subtitle">MAN COLLECTION</p>
-            <button class="btn categories_btn">VIEW MORE</button>
-          </div>
-        </div>
-        <div class="categories_card">
-          <img src="./Assets/Semua Produk/Center Tield Dress 1.jpg" alt="WOMAN COLLECTION"/>
-          <div class="categories_content">
-            <p class="categories_subtitle">WOMAN COLLECTION</p>
-            <button class="btn categories_btn">VIEW MORE</button>
-          </div>
-        </div>
-    </section>
-    <!-- About Section -->
-    <section class="hero">
-      <div id="AboutUS" class="heading">
-        <h1>About Us</h1>
-      </div>
-      <div class="container">
-        <div class="hero-content">
-          <h2>Nuansa Batik</h2>
-          <p>
-            We are a company specializing in the production and sale of
-            high-quality batik clothing. With a deep appreciation for
-            Indonesia's cultural beauty and traditions. We are committed to
-            promoting Indonesia's cultural heritage through our batik clothing.
-            Every time you choose our products, you are supporting the
-            preservation of traditions and adding value to local artisans. Thank
-            you for your support. Join us on our journey to elevate the beauty
-            of Indonesian batik to a global level.
-          </p>
-          <button class="cta-button">
-            <a href="AboutUs.html"> VIEW MORE </a>
-          </button>
-        </div>
-        <div class="hero-image">
-          <img src="./Assets/Gambar2.jpg" />
+      <div class="categories_card">
+        <img src="./Assets/Semua Produk/Center Tield Dress 1.jpg" alt="WOMAN COLLECTION" />
+        <div class="categories_content">
+          <p class="categories_subtitle">WOMAN COLLECTION</p>
+          <button class="btn categories_btn">VIEW MORE</button>
         </div>
       </div>
-    </section>
-    <!-- On Sale Section -->
-    <section class="section__container sale__container">
-      <h2 class="section__title">On Sale</h2>
-      <div class="sale__grid">
-        <div class="sale__card">
-          <img
-            src="./Assets/Batik Pria/Lanange Silver Mist Shirt.jpg"
-            alt="sale"
-          />
-          <div class="sale__content">
-            <p class="sale__subtitle">MAN SHIRT</p>
-            <h4 class="sale__title">Sale <span>40%</span> off</h4>
-            <p class="sale__subtitle">- DON'T MISS -</p>
-            <button class="btn sale__btn">SHOP NOW</button>
-          </div>
-        </div>
-        <div class="sale__card">
-          <img src="./Assets/Semua Produk/Center Tield Dress 2.jpg" alt="sale" />
-          <div class="sale__content">
-            <p class="sale__subtitle">WOMAN DRESS</p>
-            <h4 class="sale__title">Sale <span>25%</span> off</h4>
-            <p class="sale__subtitle">- DON'T MISS -</p>
-            <button class="btn sale__btn">SHOP NOW</button>
-          </div>
-        </div>
-        <div class="sale__card">
-          <img
-            src="./Assets/Batik Pria/Lanange Tropical Sunrise Shirt1.jpg"
-            alt="sale"
-          />
-          <div class="sale__content">
-            <p class="sale__subtitle">TUNICS</p>
-            <h4 class="sale__title">Sale <span>20%</span> off</h4>
-            <p class="sale__subtitle">- DON'T MISS -</p>
-            <button class="btn sale__btn">SHOP NOW</button>
-          </div>
+  </section>
+  <!-- About Section -->
+  <section class="hero">
+    <div id="AboutUS" class="heading">
+      <h1>About Us</h1>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <h2>Nuansa Batik</h2>
+        <p>
+          We are a company specializing in the production and sale of
+          high-quality batik clothing. With a deep appreciation for
+          Indonesia's cultural beauty and traditions. We are committed to
+          promoting Indonesia's cultural heritage through our batik clothing.
+          Every time you choose our products, you are supporting the
+          preservation of traditions and adding value to local artisans. Thank
+          you for your support. Join us on our journey to elevate the beauty
+          of Indonesian batik to a global level.
+        </p>
+        <button class="cta-button">
+          <a href="AboutUs.html"> VIEW MORE </a>
+        </button>
+      </div>
+      <div class="hero-image">
+        <img src="./Assets/Gambar2.jpg" />
+      </div>
+    </div>
+  </section>
+  <!-- On Sale Section -->
+  <section class="section__container sale__container">
+    <h2 class="section__title">On Sale</h2>
+    <div class="sale__grid">
+      <div class="sale__card">
+        <img src="./Assets/Batik Pria/Lanange Silver Mist Shirt.jpg" alt="sale" />
+        <div class="sale__content">
+          <p class="sale__subtitle">MAN SHIRT</p>
+          <h4 class="sale__title">Sale <span>40%</span> off</h4>
+          <p class="sale__subtitle">- DON'T MISS -</p>
+          <button class="btn sale__btn">SHOP NOW</button>
         </div>
       </div>
-    </section>
-    <!-- News section-->
-    <section class="news">
-      <div class="section__container news__container">
-        <h2 class="section__title">Latest Product</h2>
-        <div class="news_grid">
-          <div class="news_card">
-            <img
-              src="./Assets/Semua Produk/Batik Songket Shirt .jpg"
-              alt="news"
-            />
-            <div class="news_details">
-              <p>
-                FASHION <i class="ri-checkbox-blank-circle-fill"></i>
-                <span>BATIK SONGKET SHIRT</span>
-                <i class="ri-checkbox-blank-circle-fill"></i> FEB 2, 2023
-              </p>
-              <h4>Sustainable Fashion</h4>
-              <hr />
-              <p>
-                A men's batik shirt infused with the opulence of songket weaving, blending cultural charm with modern style.
-              </p>
-              <a href="#"><i class="ri-arrow-right-line"></i></a>
-            </div>
+      <div class="sale__card">
+        <img src="./Assets/Semua Produk/Center Tield Dress 2.jpg" alt="sale" />
+        <div class="sale__content">
+          <p class="sale__subtitle">WOMAN DRESS</p>
+          <h4 class="sale__title">Sale <span>25%</span> off</h4>
+          <p class="sale__subtitle">- DON'T MISS -</p>
+          <button class="btn sale__btn">SHOP NOW</button>
+        </div>
+      </div>
+      <div class="sale__card">
+        <img src="./Assets/Batik Pria/Lanange Tropical Sunrise Shirt1.jpg" alt="sale" />
+        <div class="sale__content">
+          <p class="sale__subtitle">TUNICS</p>
+          <h4 class="sale__title">Sale <span>20%</span> off</h4>
+          <p class="sale__subtitle">- DON'T MISS -</p>
+          <button class="btn sale__btn">SHOP NOW</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- News section-->
+  <section class="news">
+    <div class="section__container news__container">
+      <h2 class="section__title">Latest Product</h2>
+      <div class="news_grid">
+        <div class="news_card">
+          <img src="./Assets/Semua Produk/Batik Songket Shirt .jpg" alt="news" />
+          <div class="news_details">
+            <p>
+              FASHION <i class="ri-checkbox-blank-circle-fill"></i>
+              <span>BATIK SONGKET SHIRT</span>
+              <i class="ri-checkbox-blank-circle-fill"></i> FEB 2, 2023
+            </p>
+            <h4>Sustainable Fashion</h4>
+            <hr />
+            <p>
+              A men's batik shirt infused with the opulence of songket weaving, blending cultural charm with modern
+              style.
+            </p>
+            <a href="#"><i class="ri-arrow-right-line"></i></a>
           </div>
-          <div class="news_card">
-            <img
-              src="./Assets/Semua Produk/Center Tield Dress 1.jpg"
-              alt="news"
-            />
-            <div class="news_details">
-              <p>
-                STYLE <i class="ri-checkbox-blank-circle-fill"></i>
-                <span>CENTER TIELD DRESS</span>
-                <i class="ri-checkbox-blank-circle-fill"></i> APR 15, 2023
-              </p>
-              <h4>Fashion Tips and Advice</h4>
-              <hr />
-              <p>
-                A stylish short-sleeved satin dress that caters to all sizes. Effortlessly combining comfort and elegance, it's a perfect choice for a range of occasions.
-              </p>
-              <a href="#"><i class="ri-arrow-right-line"></i></a>
-            </div>
+        </div>
+        <div class="news_card">
+          <img src="./Assets/Semua Produk/Center Tield Dress 1.jpg" alt="news" />
+          <div class="news_details">
+            <p>
+              STYLE <i class="ri-checkbox-blank-circle-fill"></i>
+              <span>CENTER TIELD DRESS</span>
+              <i class="ri-checkbox-blank-circle-fill"></i> APR 15, 2023
+            </p>
+            <h4>Fashion Tips and Advice</h4>
+            <hr />
+            <p>
+              A stylish short-sleeved satin dress that caters to all sizes. Effortlessly combining comfort and elegance,
+              it's a perfect choice for a range of occasions.
+            </p>
+            <a href="#"><i class="ri-arrow-right-line"></i></a>
           </div>
-          <div class="news_card">
-            <img
-              src="./Assets/Batik Pria/Arjuna Batik Shirt2.jpg"
-              alt="news"
-            />
-            <div class="news_details">
-              <p>
-                TRENDS <i class="ri-checkbox-blank-circle-fill"></i>
-                <span>ARJUNA BATIK SHIRT</span>
-                <i class="ri-checkbox-blank-circle-fill"></i> JUL 22, 2023
-              </p>
-              <h4>Seasonal Trends</h4>
-              <hr />
-              <p>
-                Arjuna Batik features a blend of deep black, creamy vanilla, and rich brown. Celebrating Indonesian craftsmanship, this versatile piece exudes timeless elegance, making it perfect for both formal and casual occasions.
-              </p>
-              <a href="#"><i class="ri-arrow-right-line"></i></a>
-            </div>
+        </div>
+        <div class="news_card">
+          <img src="./Assets/Batik Pria/Arjuna Batik Shirt2.jpg" alt="news" />
+          <div class="news_details">
+            <p>
+              TRENDS <i class="ri-checkbox-blank-circle-fill"></i>
+              <span>ARJUNA BATIK SHIRT</span>
+              <i class="ri-checkbox-blank-circle-fill"></i> JUL 22, 2023
+            </p>
+            <h4>Seasonal Trends</h4>
+            <hr />
+            <p>
+              Arjuna Batik features a blend of deep black, creamy vanilla, and rich brown. Celebrating Indonesian
+              craftsmanship, this versatile piece exudes timeless elegance, making it perfect for both formal and casual
+              occasions.
+            </p>
+            <a href="#"><i class="ri-arrow-right-line"></i></a>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Footer -->
-    <footer>
-      <div class="footer">
-        <!-- footer -->
-        <div class="row">
-          <div class="footer-col">
-            <img src="./Assets/LogoNuansa.svg" alt="" />
-            <div class="social-links">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-instagram"></i></a>
-            </div>
-          </div>
-          <div class="footer-col">
-            <h4>Company & Store</h4>
-            <ul>
-              <p>Jl. Batik Indah No. 123</p>
-              <p>Batikland, Indonesia, 12345</p>
-              <p>Mobile : +62 123 4567 8901</p>
-              <p>Tel : +62 123 4567 8902</p>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Product Categories</h4>
-            <ul>
-              <li><a href="./HTML/product.html">Man Collection</a></li>
-              <li><a href="#">Woman Collection</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><a href="./HTML/privacy policy.html">Privacy Policy</a></li>
-              <li>
-                <a href="./HTML/TermsofService.html">Terms of Service</a>
-              </li>
-            </ul>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="footer">
+      <!-- footer -->
+      <div class="row">
+        <div class="footer-col">
+          <img src="./Assets/LogoNuansa.svg" alt="" />
+          <div class="social-links">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
           </div>
         </div>
-        <br />
-        <br />
-        <div class="footer-bottom">
-          <hr />
-          <p>Copyright &copy; Nuansa Batik 2023</p>
+        <div class="footer-col">
+          <h4>Company & Store</h4>
+          <ul>
+            <p>Jl. Batik Indah No. 123</p>
+            <p>Batikland, Indonesia, 12345</p>
+            <p>Mobile : +62 123 4567 8901</p>
+            <p>Tel : +62 123 4567 8902</p>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Product Categories</h4>
+          <ul>
+            <li><a href="./HTML/product.html">Man Collection</a></li>
+            <li><a href="#">Woman Collection</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="./HTML/privacy policy.html">Privacy Policy</a></li>
+            <li>
+              <a href="./HTML/TermsofService.html">Terms of Service</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
-  </body>
+      <br />
+      <br />
+      <div class="footer-bottom">
+        <hr />
+        <p>Copyright &copy; Nuansa Batik 2023</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
