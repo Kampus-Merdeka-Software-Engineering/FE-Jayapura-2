@@ -1750,8 +1750,14 @@ h2 {
       width: 15px;
     }
     /* Contact Us */
+    .ContactUs {
+      margin-top: 1rem;
+      height: 400px;
+      background-color: var(--extra-light);
+    }
     .ContactUs_container {
-      margin-left: 30px;
+      margin-top: 10px; 
+      margin-left:30px;
     }
     .header__content h1 {
       font-size: 25px;
@@ -1764,12 +1770,13 @@ h2 {
       font-size: 0.7em;
     }
     .header__content button {
-      padding: 10px 30px;
-      font-size: 0.7em;
+      padding: 10px 25px;
+      font-size: 20px;
     }
     .header__image img {
       height: auto;
       max-width: 100%;
+      margin-bottom: 115px;
     }
     /* Categories */
     .section_category {
@@ -1929,18 +1936,19 @@ h2 {
       font-size: 23px;
     }
     .header__content p {
-      font-size: 20px;
+      font-size:15px;
     }
     .header__content a {
-      padding: 15px 20px;
+      padding: 15px 10px;
     }
     .header__content button {
-      padding: 10px 30px;
-      font-size: 0.7em;
+      padding: 10px 20px;
+      font-size: 10px;
     }
     .header__image img {
       height: auto;
       max-width: 100%;
+      margin-bottom: 30px
 
     }
     /* Categories */
@@ -1983,11 +1991,16 @@ h2 {
       font-size: 16px;
     }
     .hero-content button {
-      font-size: 14px;
+      padding: 10px 20px;
+    }
+    .hero-content button a {
+      color: #fff;
+      font-size: 12px;
     }
     .hero-image {
       width: 100%;
     }
+    
     /* On sale */
     .section__container {
       flex-direction: column;
