@@ -404,7 +404,10 @@ header .shopping span {
   .logo {
     display: none;
   }
-  .navbarbutton {
+  .navbar a {
+    display: none;
+  }
+  .navbar button {
     display: none;
   }
   .navbar .shopping {
