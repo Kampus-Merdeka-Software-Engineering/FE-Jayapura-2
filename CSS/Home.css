@@ -549,11 +549,11 @@ section {
 }
 
 .categories_btn a {
-  color: var(--white);
+  color: white;
 }
 
 /* Categories */
-.categories_card:hover .categories_btn {
+.categories_card:hover .categories_btn a{
   color: var(--text-dark);
   background-color: var(--white);
 }
@@ -690,12 +690,17 @@ img {
 }
 
 /* Sale Section */
+.sale__btn a {
+  color: white;
+}
+
+/* Sale Section */
 .sale__card:hover::before {
   top: 0;
 }
 
 /* Sale Section */
-.sale__card:hover .sale__btn {
+.sale__card:hover .sale__btn a {
   color: var(--text-dark);
   background-color: var(--white);
 }
