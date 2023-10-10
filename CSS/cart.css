@@ -1,3 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Font Custom */
+@font-face {
+  font-family: allfont;
+  src: url(https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: font-desc-foot;
+  src: url(https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets//Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: font-logo;
+  src: url(https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets//RocaOne-Bold.ttf);
+}
+
+body {
+  height: 100vh;
+  background-color: #f6f4f3;
+  font-family: allfont;
+}
+
 /* Navigation Bar */
 .header {
     position: fixed;
@@ -217,13 +247,13 @@ header .shopping span{
         font-size: 15px;
         }
     }
-//* Footer */
+/* Footer */
 .footer {
     line-height: 1.5;
     font-family: fontdescfooter;
   }
   
-  /* Footer/
+/* Footer*/
   .row {
     display: flex;
     flex-wrap: wrap;
