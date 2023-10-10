@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     toggleBtn.addEventListener('click', function() {
         isOpen = !isOpen;
         dropDownMenu.classList.toggle('open', isOpen);
-        toggleBtnImg.src = isOpen ? '../Assets/x-solid.svg' : '../Assets/bars-solid.svg';
+        toggleBtnImg.src = isOpen ? 'https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets/x-solid.svg' : 'https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-2/Assets/bars-solid.svg';
         if (isOpen) {
             toggleBtnImg.style.width = '25px'; // Ganti dengan ukuran yang Anda inginkan
             toggleBtnImg.style.height = '25px'; // Ganti dengan ukuran yang Anda inginkan
